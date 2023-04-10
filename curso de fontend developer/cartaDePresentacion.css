@@ -1,0 +1,102 @@
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: whitesmoke;
+  margin: 0px;
+}
+
+.container {
+  background-color: RGB(255, 255, 255);
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 400px;
+  height: 567px;
+  overflow: hidden;
+}
+#fondo {
+  width: 100%;
+}
+
+.perfil {
+  position: relative;
+  left: 125px;
+  top: -100px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  box-sizing: content-box;
+  border: 5px solid RGB(249, 249, 249);
+}
+
+#perfil {
+  width: 100%;
+}
+
+.texto {
+  position: relative;
+  top: -100px;
+  color: RGB(94, 94, 105);
+}
+
+.container p {
+  text-align: center;
+}
+.container strong {
+  text-align: center;
+}
+
+.informacion {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -107px;
+  color: RGB(94, 94, 105);
+}
+
+#localizacion::before {
+  content: "🌍 ";
+}
+
+#email::before {
+  content: "✉ ";
+}
+
+.boton1 {
+  width: 50%;
+  position: relative;
+  top: -110px;
+  border: 1px solid black;
+  color: RGB(94, 94, 105);
+  background: RGB(249, 249, 249);
+  left: -1px;
+}
+
+.boton2 {
+  width: 50%;
+  position: relative;
+  top: -197px;
+  right: -200px;
+  border: 1px solid black;
+  color: RGB(94, 94, 105);
+  background: RGB(249, 249, 249);
+}
+
+.boton3 {
+  width: 100%;
+  position: relative;
+  top: -198px;
+  border: 1px solid black;
+  color: RGB(94, 94, 105);
+  background: RGB(101, 188, 127);
+}
+
+.boton3 p {
+  color: white;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}

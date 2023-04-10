@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: papayawhip;
+}
+
+p {
+  font-size: 4rem;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: teal;
+}

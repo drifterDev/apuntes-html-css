@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: papayawhip;
+}
+p {
+  font-size: medium;
+}
+div p:nth-child(2) {
+  color: purple;
+}
+
+p:hover {
+  color: darkgreen;
+  font-size: large;
+}
+
+p::before {
+  content: "🐲";
+}
+
+p::after {
+  content: "🤺";
+}
+
+::placeholder {
+  color: darkgreen;
+  background-color: papayawhip;
+}

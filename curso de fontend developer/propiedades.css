@@ -1,0 +1,25 @@
+.cart {
+  width: 500px;
+  height: 500px;
+  background: papayawhip;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cart img {
+  width: 100%;
+}
+
+.cart p {
+  text-align: center;
+}
+
+.cart p:nth-child(3) {
+  color: teal;
+}

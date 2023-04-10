@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background: papayawhip;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 20px solid teal;
+  margin: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

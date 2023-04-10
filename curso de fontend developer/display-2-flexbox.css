@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  background: papayawhip;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.item {
+  width: 30px;
+  height: 30px;
+  background: aqua;
+  margin: 20px;
+}
+
+.container .item:nth-child(2n + 1) {
+  background: teal;
+}

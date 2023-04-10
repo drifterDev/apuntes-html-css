@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+  border: 0.5rem solid RGB(21, 78, 135);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.caja1 {
+  background: RGB(21, 78, 135);
+  grid-column: 1/13;
+}
+
+.caja2 {
+  background: RGB(254, 254, 254);
+  grid-column: 1/13;
+}
+
+.caja3 {
+  background: RGB(158, 220, 255);
+  grid-column: 1/13;
+}
+
+.caja4 {
+  background: RGB(211, 246, 131);
+  grid-column: 1/13;
+}

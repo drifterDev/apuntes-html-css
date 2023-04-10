@@ -1,0 +1,19 @@
+#uno {
+  background: aqua;
+}
+
+#dos {
+  background: papayawhip;
+}
+
+@media (max-width: 500px) {
+  #uno {
+    background: teal;
+  }
+}
+
+@media (min-width: 300px) {
+  #dos {
+    background: peru;
+  }
+}

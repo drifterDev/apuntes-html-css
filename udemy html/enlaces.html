@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio de practica</title>
+  </head>
+  <body>
+    <!--Encabezado de la pagina-->
+    <h1>Mi primera web</h1>
+
+    <!--Listado de otras paginas-->
+    <ul>
+      <li><a href="ejercicioPractica.html" title="Inicio">Inicio</a></li>
+      <li><a href="multiplesPaginas.html" title="contenidos">Contenidos</a></li>
+      <li><a href="enlaces.html" title="contacto">Contacto</a></li>
+      <li>
+        <a href="https://youtube.com" title="YouTube" target="_blank"
+          >Videos tutoriales</a
+        >
+      </li>
+    </ul>
+
+    <hr />
+    <!--contenido de contacto html-->
+    <h2>Contacto</h2>
+    <form>
+      <p>
+        <label for="nombre">Nombre</label><br />
+        <input type="text" name="nombre" />
+      </p>
+      <p>
+        <label for="gustos">¿Cúales son tus gustos?</label><br />
+        <textarea name="gustos"></textarea>
+      </p>
+      <p>
+        <label for="edad">Edad</label><br />
+        <select name="edad">
+          <option value="menor">No desea informar</option>
+          <option value="adulto">Menor de edad</option>
+          <option value="mayor">Adulto</option>
+          <option>Adulto mayor</option>
+        </select>
+      </p>
+      <input type="submit" value="Enviar datos" />
+    </form>
+  </body>
+</html>

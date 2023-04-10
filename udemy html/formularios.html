@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Formulario</h3>
+    <form action="/htmlPrueba" method="post">
+      <p>
+        <label for="descripcion">Descripción</label>
+        <br /><textarea
+          cols="25"
+          rows="10"
+          name="descripcion"
+          placeholder="Escribe tu codigo aquí"
+        ></textarea>
+      </p>
+      <p>
+        <label for="nombre">Nombre del estudiante</label>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Escribe tu nombre completo"
+        />
+      </p>
+      <p>
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          name="edad"
+          placeholder="Escribe tu edad en años"
+        />
+      </p>
+      <p>
+        <input
+          type="radio"
+          name="nacionalidad"
+          value="colombia"
+        />Colombia<br />
+        <input
+          type="radio"
+          name="nacionalidad"
+          value="venezuela"
+        />Venezuela<br />
+        <input type="radio" name="nacionalidad" value="ecuador" />Ecuador<br />
+      </p>
+      <p>
+        <select>
+          <option value="ninguna">Ninguna</option>
+          <option value="informatica">Informática</option>
+          <option value="sistemas">Sistemas</option>
+          <option value="software">Software</option>
+        </select>
+      </p>
+      <input type="submit" value="enviar formulario" />
+    </form>
+  </body>
+</html>
