@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  background-image: url("../fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: darkkhaki;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: sandybrown;
+}
