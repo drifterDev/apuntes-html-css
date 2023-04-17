@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 120rem;
+  margin: 0rem auto;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  background-color: yellowgreen;
+  border: 0.1rem solid black;
+}
+
+.menu {
+  background-color: skyblue;
+  border: 0.1rem solid black;
+}
+
+.menu p {
+  width: 23rem;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.menu p > a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu p:hover {
+  background-color: rgb(54, 90, 105);
+}
+
+.menu p > a:hover {
+  color: white;
+}
+
+section {
+  float: left;
+  width: 30%;
+  height: 60rem;
+  background-color: skyblue;
+  border: 0.1rem solid black;
+}
+
+section > p {
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+main {
+  float: left;
+  width: 70%;
+  height: 60rem;
+  background-color: yellowgreen;
+  border: 0.1rem solid black;
+}
+
+.caja {
+  width: 50%;
+  height: 25%;
+  float: left;
+  background-color: yellowgreen;
+  border: 0.1 solid black;
+}
+
+.caja > p {
+  text-align: center;
+  line-height: 15rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+footer {
+  float: left;
+  width: 120rem;
+  height: 5rem;
+  background-color: skyblue;
+  border: 0.1rem solid black;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 5rem;
+}
