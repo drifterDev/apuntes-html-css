@@ -19,44 +19,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-* {
-  box-sizing: border-box;
+div {
+  border-style: solid;
+  border-color: tomato;
+  background-color: rgba(128, 128, 128, 0.116);
 }
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 70%;
-  position: static;
-}
-
-/* Right column */
-.rightcolumn {
-  width: 30%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-  position: static;
-  display: inline-block;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+h3 {
+  background-color: tomato;
 }
