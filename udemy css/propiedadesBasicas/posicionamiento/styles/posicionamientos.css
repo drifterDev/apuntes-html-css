@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+posicion relativa: por defecto
+posicion absoluta: se pone justo donde digamos, sin importar los demas elementos
+posicion fixed: 
+*/
+
+.container {
+  background-color: gainsboro;
+  width: 100vw;
+  height: 200vh;
+}
+
+.caja1 {
+  position: absolute;
+  top: 50rem;
+  left: 100rem;
+  border: 0.1rem solid black;
+  background-color: red;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  font-size: large;
+  line-height: 15rem;
+}
+
+.caja2 {
+  border: 0.1rem solid black;
+  background-color: blue;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  font-size: large;
+  line-height: 15rem;
+}
+
+.caja3 {
+  border: 0.1rem solid black;
+  background-color: yellow;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  font-size: large;
+  line-height: 15rem;
+}
+
+.caja4 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0.1rem solid black;
+  background-color: green;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  font-size: large;
+  line-height: 15rem;
+}
