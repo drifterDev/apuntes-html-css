@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul li {
+  font-size: large;
+}
+
+ul li:first-child {
+  color: gray;
+  text-decoration: underline;
+}
+
+#Enlacezzz {
+  font-size: large;
+}
+
+/*Sin visitar la pagina*/
+#Enlacezzz:link {
+  color: purple;
+}
+
+/*Ya visitó la pagina*/
+#Enlacezzz:visited {
+  color: burlywood;
+}
+
+#Enlacezzz:hover {
+  color: aquamarine;
+}
+
+/*Focus: Cuando esta centrado en el elemento*/
+input[type="text"]:focus {
+  background-color: gainsboro;
+}
