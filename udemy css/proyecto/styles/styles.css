@@ -1,0 +1,51 @@
+/* Fuentes */
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/paven.png");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Cabecera */
+header {
+  min-width: 102.4rem;
+  width: 100%;
+  height: 25rem;
+  margin: 0rem auto;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header #logotipo {
+  width: 77rem;
+  margin: 0rem auto;
+  padding: 2rem;
+}
+
+header #logotipo img {
+  display: block;
+  text-align: center;
+  margin: 0rem auto;
+  width: 15rem;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #70b231;
+}
+
+header h1 a {
+  color: #70b231;
+}
