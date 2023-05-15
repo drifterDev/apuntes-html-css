@@ -10,6 +10,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "fajala";
+  src: url("../fonts/FjallaOne-Regular.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")
+      format("svg"),
+    url("../fonts/websymbols-regular-webfont.eot");
+  src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embeded"),
+    url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Estilos generales */
 * {
   margin: 0;
@@ -75,7 +94,7 @@ button:active {
   text-shadow: 0rem 0rem 0.1rem #ccc;
 }
 
-/* a {
+a {
   color: #529125;
   text-decoration: none;
 }
@@ -86,7 +105,20 @@ a:visited {
 
 a:hover {
   color: #285616;
-} */
+}
+
+.icon {
+  font-family: "icons";
+  float: left;
+  margin-right: 0.5rem;
+  margin-top: -0.1rem;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
 /* Cabecera */
 header {
   font-family: "nevis";
@@ -160,11 +192,11 @@ nav > ul > li a {
   display: block;
   padding: 0 2rem;
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 
 nav > ul > li > a:first-child {
-  border-left: 0.1rem solid gray;
+  border-left: 0.1rem solid gray !important;
 }
 
 nav > ul > li:hover {
@@ -196,7 +228,7 @@ nav > ul > li > ul > li {
 }
 
 nav > ul > li > ul > li a {
-  color: #666666;
+  color: #666666 !important;
 }
 
 nav > ul > li > ul > li:hover {
@@ -215,7 +247,6 @@ nav > ul > li > ul > li:hover {
 
 #aside,
 #frase {
-  clear: both;
   width: 20rem;
   float: left;
   margin: 3rem;
@@ -309,4 +340,84 @@ aside div a:hover,
 #aside label {
   margin: 0rem auto;
   text-align: center;
+}
+
+/* Secciones */
+#sections {
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 2rem;
+}
+
+#sections .titulo {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid #ccc;
+  margin-bottom: 0.5rem;
+  margin-top: -2rem;
+  font-family: "fajala";
+}
+
+#sections section {
+  margin-top: 4rem;
+  background-color: white;
+  padding: 2rem;
+  border: 0.1rem solir #ccc;
+  box-shadow: 0 0 0.4rem #c9c9c9;
+  color: #333333;
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+#sections .article {
+  margin: 2rem 1rem;
+}
+
+#sections .date {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+#sections .stickerone,
+#sections .stickertwo {
+  position: absolute;
+  margin-top: -4rem;
+  z-index: 0;
+}
+
+#sections .stickertwo {
+  margin-left: 86rem;
+}
+
+/* Footer */
+#history {
+  float: right;
+  clear: both;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#footer {
+  position: absolute;
+  left: -40px;
+  bottom: -120rem;
+  width: 100%;
+  background-color: #333333;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  margin: 4rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  box-shadow: 0 0 0.2rem gray;
 }
