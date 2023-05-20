@@ -1,0 +1,118 @@
+/* Fuentes */
+@font-face {
+  font-family: "trebuchetMS";
+  src: url("fonts/TrebuchetMS.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("fonts/BebasNeue.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "webSymbolsRegular";
+  src: url("fonts/websymbols-regular-webfont.eot");
+  src: url("fonts/websymbols-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("fonts/websymbols-regular-webfont.ttf") format("truetype"),
+    url("fonts/websymbols-regular-webfont.svg#webSymbolsRegular") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/pattern.png");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrap {
+  width: 120rem;
+  margin: 0px auto;
+}
+
+.gear {
+  font-family: webSymbolsRegular;
+}
+
+/* Estilos de la cabecera */
+
+header {
+  width: 100%;
+  height: 7rem;
+  background-color: black;
+  color: white;
+  font-family: "BebasNeue";
+}
+
+#logo {
+  float: left;
+  width: 20rem;
+  height: 5.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  background-color: #37bcf9;
+  cursor: pointer;
+  margin-top: 0.8rem;
+  margin-left: 2rem;
+  overflow: hidden;
+  transition: all 300ms;
+}
+
+#logo h3 {
+  font-size: 4rem;
+  display: block;
+  float: right;
+  margin-right: 6.5rem;
+  margin-top: 0.5rem;
+  transition: all 300ms;
+}
+
+#logo .gear {
+  display: block;
+  float: left;
+  margin-top: 0.8rem;
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+
+#menu {
+  float: right;
+  height: 7rem;
+  background: transparent;
+}
+
+#menu ul li {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin: 0rem 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 7rem;
+}
+
+#menu ul li a {
+  display: block;
+  color: white;
+  transition: all 200ms;
+  text-decoration: none;
+}
+
+#menu ul li a:hover {
+  color: #37bcf9;
+  /* Hace crecer la escala del elemento en el eje x, y */
+  transform: scale(1.2, 1.2);
+}
