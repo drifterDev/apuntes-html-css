@@ -234,3 +234,142 @@ header {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
+
+#lateral h3:first-child {
+  margin-top: 0rem;
+}
+
+#search {
+  width: 90%;
+  height: 3rem;
+  margin: 1rem auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #ccc;
+  box-shadow: 0.1rem 0.1rem 0.4rem #ccc inset;
+}
+
+#lateral input[type="text"] {
+  width: 85%;
+  height: 3rem;
+  border: none;
+  padding-left: 0.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #ccc;
+  transition: all 300ms;
+}
+
+#lateral input[type="text"]:focus {
+  color: #555;
+}
+
+#lateral input[type="button"],
+#lateral input[type="submit"] {
+  height: 3rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  border-left: 0.1rem solid #ccc;
+  color: #555;
+  padding-left: 1rem;
+}
+
+.aside-box {
+  width: 85%;
+  height: 24rem;
+  margin: 2rem auto 0rem;
+  padding-top: 0.2rem;
+  background: white;
+  box-shadow: 0rem 0rem 0.1rem rgb(0, 0, 0, 0.3),
+    0rem 0.3rem 0.7rem rgb(0, 0, 0, 0.3), 0rem 0.1rem white inset,
+    0rem -0.3rem 0.2rem rgb(0, 0, 0, 0.3) inset;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+  display: block;
+  margin: 2rem auto 0rem;
+  width: 93%;
+  height: 3rem;
+  border: 0.1rem solid #ccc;
+  box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset;
+  border-radius: 0.5rem;
+  color: gray;
+  padding-left: 2.5rem;
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+  color: #555;
+  box-shadow: 0.1rem 0.1rem 0.1rem gray inset;
+}
+
+#login #user,
+#login #password {
+  display: block;
+  text-align: center;
+  position: absolute;
+  font-size: 1.5rem;
+  margin: 0.6rem 0rem 0rem 1.5rem;
+}
+
+#login #password {
+  margin-left: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+#login input[type="button"],
+#login input[type="reset"],
+#login button,
+#login input[type="submit"] {
+  text-align: center;
+  width: 10rem;
+  height: 3.5rem;
+  margin-top: 2rem;
+  color: white;
+  background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+  border: 0.1rem solid #156785;
+  border-radius: 0rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: "TrebuchetMS";
+  font-weight: lighter;
+  margin-left: 1.7rem;
+  margin-bottom: 2rem;
+  transition: all 300ms;
+}
+
+#login input[type="button"]:hover,
+#login input[type="reset"]:hover,
+#login button:hover,
+#login input[type="submit"]:hover {
+  box-shadow: 0rem 0rem 0.3rem gray;
+}
+
+#login a {
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin-left: 1.8rem;
+  color: #555;
+  transition: all 300ms;
+}
+
+#login a:hover {
+  text-decoration: underline;
+  color: #2f78bc;
+}
+
+#social {
+  height: 19rem;
+}
+
+#social a {
+  display: block;
+  color: #333;
+  font-size: 3rem;
+  margin: 1rem 0rem 2rem 2rem;
+  text-decoration: none;
+}
