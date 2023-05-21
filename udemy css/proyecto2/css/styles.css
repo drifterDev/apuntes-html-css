@@ -45,7 +45,8 @@ html {
   margin: 0px auto;
 }
 
-.gear {
+.gear,
+.icon {
   font-family: webSymbolsRegular;
 }
 
@@ -62,12 +63,12 @@ header {
 #logo {
   float: left;
   width: 20rem;
-  height: 5.5rem;
+  height: 5rem;
   text-align: center;
   letter-spacing: 0.1rem;
   background-color: #37bcf9;
   cursor: pointer;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   margin-left: 2rem;
   overflow: hidden;
   transition: all 300ms;
@@ -115,4 +116,75 @@ header {
   color: #37bcf9;
   /* Hace crecer la escala del elemento en el eje x, y */
   transform: scale(1.2, 1.2);
+}
+
+/* Estilos del banner */
+
+#banner {
+  margin: 2rem auto;
+  width: 95.5%;
+  height: 10rem;
+  border: 1rem solid white;
+  box-shadow: 0rem 0rem 0.2rem gray;
+  background: url("../images/bakbaner.png");
+  background-position: -20rem -20rem;
+}
+
+#banner h1 {
+  display: block;
+  width: 101rem;
+  font-family: "BebasNeue";
+  color: white;
+  font-size: 4.5rem;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem auto;
+  font-weight: normal;
+  text-shadow: 0.2rem 0.2rem 0.1rem black;
+}
+
+/* Estilos de las tarjetas */
+
+.card {
+  width: 20rem;
+  height: 31rem;
+  border: 0.1rem solid #ccc;
+  box-shadow: 0.1rem 0.1rem 0.2rem #ddd;
+  overflow: hidden;
+  float: left;
+  background: white;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.card:last-child {
+  margin-right: 0rem;
+}
+
+.card .icon {
+  display: block;
+  width: 100%;
+  height: 12rem;
+  font-size: 5rem;
+  line-height: 10rem;
+  margin: 0rem auto;
+  text-align: center;
+}
+
+.card .category {
+  width: 100%;
+  height: 4rem;
+  font-family: "TrebuchetMS";
+  font-size: 1.9rem;
+  color: #00538c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card .description {
+  width: 100%;
+  text-align: center;
+  padding: 0rem 1rem;
+  color: #00538c;
+  font-family: "TrebuchetMS";
+  font-size: 1.3rem;
 }
