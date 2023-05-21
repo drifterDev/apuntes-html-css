@@ -1,3 +1,24 @@
+<!--
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,14 +50,15 @@
     </header>
     <!-- Final de la cabecera -->
 
-    <!-- Inicio banner -->
-
     <section class="wrap">
       <section id="info">
+        <!-- Inicio banner -->
         <div id="banner">
           <h1>Proyecto aplicando animaciones, transiciones y responsive</h1>
         </div>
+        <!-- Final del banner -->
 
+        <!-- Inicio de tarjetas -->
         <div id="cards">
           <div class="card">
             <p class="icon">H</p>
@@ -93,9 +115,50 @@
             </p>
           </div>
         </div>
+        <!-- final de tarjetas -->
       </section>
-    </section>
 
-    <!-- Final del banner -->
+      <!-- Inicio barra lateral -->
+      <aside id="lateral">
+        <h3>BUSCAR</h3>
+        <div id="search">
+          <form action="">
+            <input type="text" name="" id="" />
+            <input type="button" value="L" />
+          </form>
+        </div>
+
+        <h3>LOGIN</h3>
+        <div id="login">
+          <form action="">
+            <label id="user">U</label>
+            <input type="email" name="" id="" />
+            <label id="password">w</label>
+            <input type="password" name="" id="" />
+            <input type="submit" value="Entrar" />
+            <input type="reset" value="Limpiar" />
+            <a href="#">Registrate aquí</a>
+            <a href="#">¿Has olvidado la contraseña?</a>
+          </form>
+        </div>
+
+        <h3>CONTACTO</h3>
+        <div id="social">
+          <div class="twitter">
+            <a href="#">t</a>
+          </div>
+          <div class="facebook">
+            <a href="#">f</a>
+          </div>
+          <div class="youtube">
+            <a href="#">y</a>
+          </div>
+        </div>
+
+        <h3>PATROCINADORES</h3>
+        <div id="sponsors"></div>
+      </aside>
+      <!-- fin de la barra lateral -->
+    </section>
   </body>
 </html>
