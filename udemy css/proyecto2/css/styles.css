@@ -466,3 +466,82 @@ header {
   color: #00538c;
   text-decoration: none;
 }
+
+/* estilos para el footer */
+
+#footer {
+  width: 100%;
+  height: 47rem;
+  background: black;
+  color: white;
+  overflow: hidden;
+}
+
+#footer .wrap > div {
+  float: left;
+  width: 32rem;
+  height: 37rem;
+  margin: 4rem;
+  text-align: center;
+  color: white;
+  font-family: "TrebuchetMS";
+}
+
+#footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #37bcf9;
+  transition: all 300ms;
+}
+
+#footer h5 {
+  display: block;
+  background: url("../images/pxgray.png"), white;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-family: "BebasNeue";
+  font-size: 4rem;
+  line-height: 5.5rem;
+  color: black;
+  border-radius: 0.5rem;
+}
+
+#footer ul {
+  text-align: left;
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+#footer ul li {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-bottom: 0.1rem solid #ccc;
+}
+
+#footer ul li a {
+  display: block;
+  height: 4rem;
+}
+
+#footer iframe {
+  width: 100%;
+  height: 30rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: 0.5rem solid white;
+  box-shadow: 0rem 0rem 0.5rem gray;
+}
+
+#footer img {
+  margin-bottom: 1.5rem;
+}
+
+#footer #browsers img {
+  width: 4.5rem;
+}
+
+#footer #info :last-child {
+  font-size: 1.4rem;
+}
