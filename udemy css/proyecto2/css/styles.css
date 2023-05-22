@@ -71,6 +71,11 @@ html {
   font-family: webSymbolsRegular;
 }
 
+.clearfix {
+  float: none;
+  clear: both;
+}
+
 /* Estilos de la cabecera */
 
 header {
@@ -175,6 +180,7 @@ header {
   background: white;
   cursor: pointer;
   margin: 2rem;
+  margin-bottom: 5rem;
 }
 
 .card:last-child {
@@ -371,5 +377,92 @@ header {
   color: #333;
   font-size: 3rem;
   margin: 1rem 0rem 2rem 2rem;
+  text-decoration: none;
+}
+
+/* Estilos de los articulos */
+#articles {
+  width: 86rem;
+  float: left;
+}
+
+#articles h2 {
+  display: block;
+  width: 100%;
+  height: 7.5rem;
+  line-height: 7.5rem;
+  text-align: center;
+  font-family: "BebasNeue";
+  font-size: 4rem;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+  background: url("../images/pxgray.png"), white;
+  box-shadow: 0rem 0.1rem 0rem #393d3f, 0.1rem 0.2rem 0rem #393d3f,
+    0.2rem 0.3rem 0rem #393d3f, 0.3rem 0.4rem 0rem #393d3f;
+  margin: 0rem auto 1.5rem;
+}
+
+#articles article {
+  width: 100%;
+  height: auto;
+  border: 0.1rem solid #ccc;
+  margin: 4rem auto;
+  padding: 1rem;
+  font-family: "TrebuchetMS";
+  background: white;
+  color: black;
+  box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
+}
+
+#articles article h4 {
+  display: block;
+  font-size: 2.6rem;
+  margin: 0.3rem;
+}
+
+#articles article h4 a {
+  text-decoration: none;
+  color: #00538c;
+}
+
+#articles article h4 a:hover {
+  text-decoration: underline;
+}
+
+#articles .data {
+  float: right;
+  background: #393d3f;
+  color: white;
+  height: 3rem;
+  line-height: 2.5rem;
+  margin: -1rem;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  border-radius: 0rem 0rem 0rem 0.5rem;
+}
+
+#articles .data span {
+  margin: 0.6rem;
+}
+
+#articles article p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+#blog {
+  height: 10rem;
+  margin-top: 6rem;
+  line-height: 10rem;
+  text-align: center;
+  font-family: "BebasNeue";
+}
+
+#blog a {
+  display: block;
+  font-family: "BebasNeue";
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  color: #00538c;
   text-decoration: none;
 }
