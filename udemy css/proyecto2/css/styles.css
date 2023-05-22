@@ -115,6 +115,54 @@ header {
   margin-top: 0.8rem;
   margin-left: 2rem;
   font-size: 3rem;
+  animation-name: rotate-gear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#logo:hover {
+  border-radius: 0.2rem;
+  color: black;
+  background-color: #ccc;
+}
+
+#logo:hover .gear {
+  animation: fromBellow 500ms linear;
+}
+
+#logo:hover h3 {
+  animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes rotate-gear {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 #menu {
@@ -154,6 +202,17 @@ header {
   box-shadow: 0rem 0rem 0.2rem gray;
   background: url("../images/bakbaner.png");
   background-position: -20rem -20rem;
+  animation: backBanner 10s linear;
+  overflow: hidden;
+}
+
+@keyframes backBanner {
+  0% {
+    background-position: 0rem 0rem;
+  }
+  100% {
+    background-position: -20rem -20rem;
+  }
 }
 
 #banner h1 {
@@ -166,6 +225,30 @@ header {
   margin: 1.5rem auto;
   font-weight: normal;
   text-shadow: 0.2rem 0.2rem 0.1rem black;
+  animation: showText 10s linear;
+}
+
+@keyframes showText {
+  0% {
+    transform: translateX(-600%) scale(5, 5);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(600%) scale(5, 5);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(-600%) scale(5, 5);
+    opacity: 0;
+    text-shadow: none;
+    color: transparent;
+  }
+  100% {
+    transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.1rem black;
+  }
 }
 
 /* Estilos de las tarjetas */
@@ -180,7 +263,12 @@ header {
   background: white;
   cursor: pointer;
   margin: 2rem;
+  transition: all 300ms;
   margin-bottom: 5rem;
+}
+
+.card:hover {
+  background: black;
 }
 
 .card:last-child {
@@ -195,6 +283,22 @@ header {
   line-height: 10rem;
   margin: 0rem auto;
   text-align: center;
+  transition: all 300ms;
+}
+
+.card:hover .icon {
+  font-size: 7rem;
+  color: #37bcf9;
+  animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 .card .category {
@@ -205,6 +309,23 @@ header {
   color: #00538c;
   font-weight: bold;
   text-align: center;
+  transition: all 300ms;
+}
+
+.card:hover .category {
+  color: white;
+  animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory {
+  from {
+    transform: translateX(-200%);
+    color: black;
+  }
+  to {
+    transform: translateX(0%);
+    color: white;
+  }
 }
 
 .card .description {
@@ -214,6 +335,23 @@ header {
   color: #00538c;
   font-family: "TrebuchetMS";
   font-size: 1.3rem;
+  transition: all 300ms;
+}
+
+.card:hover .description {
+  color: white;
+  animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+  from {
+    transform: translateY(200%);
+    color: black;
+  }
+  to {
+    transform: translateY(0%);
+    color: white;
+  }
 }
 
 /* Estilos de la barra lateral */
@@ -380,6 +518,31 @@ header {
   text-decoration: none;
 }
 
+#social .overlay {
+  display: block;
+  height: 3.4rem;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-shadow: 0rem 0rem 0.1rem #ccc;
+  border: 0.3rem solid white;
+  box-shadow: 0rem 0rem 0.4rem #ccc;
+  background: #f4f7fe;
+  position: absolute;
+  padding: 0.5rem;
+  margin: -5.2rem 0rem 0rem 7.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 400ms;
+  transform: translateX(-90%);
+}
+
+#social div:hover .overlay {
+  opacity: 1;
+  transform: translate(0%);
+}
+
 /* Estilos de los articulos */
 #articles {
   width: 86rem;
@@ -456,6 +619,7 @@ header {
   line-height: 10rem;
   text-align: center;
   font-family: "BebasNeue";
+  transition: all 1s;
 }
 
 #blog a {
@@ -464,7 +628,40 @@ header {
   font-size: 4rem;
   letter-spacing: 0.3rem;
   color: #00538c;
+  transition: all 1s;
   text-decoration: none;
+}
+
+#blog:hover {
+  background-color: #333;
+  border: 1rem solid #37bcf9;
+  border-radius: 24rem;
+  box-shadow: 0rem 0rem 1rem gray;
+  animation: borderColor 10s infinite linear;
+}
+
+#blog:hover a {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem black, 0.1rem 0.2rem 0.1rem black,
+    0.1rem 0.3rem 0.1rem black, 0.1rem 0.4rem 0.1rem black;
+}
+
+@keyframes borderColor {
+  0% {
+    border: 1rem solid #37bcf9;
+  }
+  25% {
+    border: 1rem solid green;
+  }
+  50% {
+    border: 1rem solid yellow;
+  }
+  75% {
+    border: 1rem solid white;
+  }
+  100% {
+    border: 1rem solid #37bcf9;
+  }
 }
 
 /* estilos para el footer */
@@ -522,7 +719,14 @@ header {
 
 #footer ul li a {
   display: block;
+  transition: all 300ms;
   height: 4rem;
+}
+
+#footer ul li:hover a {
+  padding-left: 4rem;
+  color: white;
+  width: 100%;
 }
 
 #footer iframe {
