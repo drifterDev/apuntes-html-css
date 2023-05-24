@@ -1,0 +1,14 @@
+//Herencia
+%alert-normal {
+  border: 1px solid gray;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.alert {
+  @extend %alert-normal;
+}
+
+#fecha {
+  @extend %alert-normal;
+}

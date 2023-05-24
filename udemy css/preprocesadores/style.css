@@ -1,4 +1,70 @@
 h1 {
+  text-decoration: underline;
+}
+
+.caja {
+  padding: 10px;
+  border: 10px solid yellow;
+  border-radius: 10px;
+}
+
+body {
+  border: 10px solid red;
+  border-radius: 10px;
+}
+
+#fecha, .alert {
+  border: 1px solid gray;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+#container h1 {
+  font-size: 30px;
+}
+#container p {
+  width: 40%;
+  color: white;
+  background: black;
+}
+
+#container h1 {
+  background: black;
+}
+
+#listado ul li:nth-child(1) {
+  font-size: 4px;
+}
+
+#listado ul li:nth-child(2) {
+  font-size: 8px;
+}
+
+#listado ul li:nth-child(3) {
+  font-size: 12px;
+}
+
+#listado ul li:nth-child(4) {
+  font-size: 16px;
+}
+
+#listado ul li:nth-child(5) {
+  font-size: 20px;
+}
+
+#listado ul li:nth-child(6) {
+  font-size: 24px;
+}
+
+#listado ul li:nth-child(7) {
+  font-size: 28px;
+}
+
+#listado ul li:nth-child(8) {
+  font-size: 32px;
+}
+
+h1 {
   font-family: sans-serif, Helvetica, Arial;
   color: papayawhip;
 }

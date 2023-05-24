@@ -1,0 +1,10 @@
+//Condicionales
+$papaya: papayawhip;
+
+#container h1 {
+  @if $papaya==papayawhip {
+    background: black;
+  } @else {
+    background: white;
+  }
+}

@@ -1,0 +1,9 @@
+//Bucles
+
+//FOR
+$contador: 1;
+@for $contador from 1 through 8 {
+  #listado ul li:nth-child(#{$contador}) {
+    font-size: 4px * $contador;
+  }
+}

@@ -1,8 +1,18 @@
+// Para importar modulos
+@use "style2";
+@use "mixins";
+@use "herencia";
+@use "operadores";
+@use "condicionales";
+@use "bucles";
+
+// Variables
 $fuente-principal: sans-serif, Helvetica, Arial;
 $fondo-color: black;
 $color-p: white;
 $papaya: papayawhip;
 
+// Anidacion
 h1 {
   font-family: $fuente-principal;
   color: $papaya;

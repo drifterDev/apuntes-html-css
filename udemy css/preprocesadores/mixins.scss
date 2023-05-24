@@ -1,0 +1,14 @@
+//Mixins (funciones)
+@mixin crearBordes($color, $tamano) {
+  border: $tamano solid $color;
+  border-radius: 10px;
+}
+
+.caja {
+  padding: 10px;
+  @include crearBordes(yellow, 10px);
+}
+
+body {
+  @include crearBordes(red, 10px);
+}
