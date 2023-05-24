@@ -1,0 +1,29 @@
+$fuente-principal: sans-serif, Helvetica, Arial;
+$fondo-color: black;
+$color-p: white;
+$papaya: papayawhip;
+
+h1 {
+  font-family: $fuente-principal;
+  color: $papaya;
+}
+
+p {
+  color: $fondo-color;
+}
+
+.caja {
+  h1 {
+    color: papayawhip;
+  }
+
+  p {
+    color: black;
+  }
+
+  #fecha {
+    p {
+      color: $papaya;
+    }
+  }
+}

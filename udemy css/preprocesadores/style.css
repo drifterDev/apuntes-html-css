@@ -1,0 +1,20 @@
+h1 {
+  font-family: sans-serif, Helvetica, Arial;
+  color: papayawhip;
+}
+
+p {
+  color: black;
+}
+
+.caja h1 {
+  color: papayawhip;
+}
+.caja p {
+  color: black;
+}
+.caja #fecha p {
+  color: papayawhip;
+}
+
+/*# sourceMappingURL=style.css.map */
