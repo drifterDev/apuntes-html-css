@@ -1,0 +1,106 @@
+/*
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#container {
+  width: 75vw;
+  height: 90vh;
+  display: grid;
+  /* Tambien podemos hacerlo de la siguiente manera */
+  /* grid-template-areas:
+    "header header header header header"
+    "menu menu menu menu menu"
+    "contenido contenido contenido contenido lateral"
+    "footer footer footer footer footer"
+  ; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 15% 10% 60% 15%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+#header {
+  grid-column: 1/6;
+  background: blue;
+  color: white;
+}
+
+#header h1 {
+  margin-top: 20px;
+}
+
+#menu {
+  padding: auto;
+  grid-column: 1/6;
+  background: lightblue;
+  color: black;
+}
+
+#menu a {
+  color: black;
+  text-decoration: none;
+}
+
+#menu ul {
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#menu ul li {
+  grid-row: 2/3;
+}
+
+#contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/5;
+  grid-row: 3/5;
+  grid-gap: 25px;
+  padding: 10px;
+  background: #eee;
+}
+
+#contenido article {
+  background: #ccc;
+  border: 1px solid #555;
+}
+
+#lateral {
+  grid-row: 3/5;
+  background: aquamarine;
+}
+
+#footer {
+  grid-column: 1/6;
+  background: papayawhip;
+}
