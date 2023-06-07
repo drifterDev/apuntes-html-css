@@ -33,40 +33,23 @@ SOFTWARE.
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="/curso de frontend developer practico/styles/parte-1.css"
-    />
+    <link rel="stylesheet" href="styles/parte-2.css" />
   </head>
   <body>
     <div class="login">
       <div class="form-container">
         <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
-        <h1 class="title">Create a new password</h1>
-        <p class="subtitle">Enter a new password for your account</p>
-
-        <form action="/" class="form">
-          <label for="password" class="label">Password </label>
-          <input
-            type="password"
-            id="password"
-            placeholder="********"
-            class="input input-password"
-          />
-          <label for="new-password" class="label">Re-enter Password </label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="********"
-            class="input input-password"
-          />
-
-          <input
-            type="submit"
-            value="Confirm"
-            class="primary-button login-button"
-          />
-        </form>
+        <h1 class="title">Email has been sent!</h1>
+        <p class="subtitle">
+          Please check yout inbox for instructions on how to reset the password
+        </p>
+        <div class="email-image">
+          <img src="./icons/email.svg" alt="email" />
+        </div>
+        <button class="primary-button login-button">Login</button>
+        <p class="reset">
+          <span>Didn't receive the email? </span><a href="/">Resends</a>
+        </p>
       </div>
     </div>
   </body>

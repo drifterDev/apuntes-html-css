@@ -33,41 +33,43 @@ SOFTWARE.
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="/curso de frontend developer practico/styles/parte-3.css"
-    />
+    <link rel="stylesheet" href="styles/parte-4.css" />
   </head>
   <body>
     <div class="login">
       <div class="form-container">
-        <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
-
+        <h1 class="title">My account</h1>
         <form action="/" class="form">
-          <label for="email" class="label">Email adress </label>
-          <input
-            type="text"
-            id="email"
-            placeholder="correoElectronico@gmail.com"
-            class="input input-email"
-          />
-          <label for="password" class="label">Password </label>
-          <input
-            type="password"
-            id="password"
-            placeholder="********"
-            class="input input-password"
-          />
+          <div>
+            <label for="name" class="label">Name </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Mateo Álvarez"
+              class="input input-name"
+            />
+            <label for="email" class="label">Email adress </label>
+            <input
+              type="text"
+              id="email"
+              placeholder="correoElectronico@gmail.com"
+              class="input input-email"
+            />
+            <label for="new-password" class="label">Password </label>
+            <input
+              type="password"
+              id="new-password"
+              placeholder="********"
+              class="input input-password"
+            />
+          </div>
 
           <input
             type="submit"
-            value="Log in"
+            value="Create"
             class="primary-button login-button"
           />
-          <a href="/">Forgot my password</a>
         </form>
-
-        <button class="secondary-button signup-button">Sign up</button>
       </div>
     </div>
   </body>
