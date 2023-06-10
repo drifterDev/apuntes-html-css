@@ -143,12 +143,22 @@ main {
 }
 
 /* Estilos de las tablas */
+
+.main-tables-container {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .main-currency-table {
   width: 70%;
   min-width: 235px;
   max-width: 50rem;
   height: 360px;
-  margin: 0 auto;
+  margin: 10px 30px;
+  position: relative;
+  scroll-snap-align: center;
 }
 
 .main-currency-table .currency-table-title {
