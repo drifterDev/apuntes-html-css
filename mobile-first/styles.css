@@ -20,3 +20,75 @@ html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
 }
+
+/* Estilos del header */
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 32rem;
+  height: 33.4rem;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+header img {
+  width: 15rem;
+  height: 2.4rem;
+  margin-top: 6rem;
+  align-self: center;
+}
+
+.header-title-container {
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  height: 21.8rem;
+  margin-top: 4rem;
+  text-align: center;
+  align-self: center;
+}
+
+.header-title-container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.header-title-container p {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  color: var(--soft-orange);
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+
+.header-title-container .header-button {
+  position: absolute;
+  left: calc(50% - 118px);
+  top: 27rem;
+  display: block;
+  margin-top: 3.5rem;
+  padding: 15px;
+  width: 229px;
+  height: 4.8rem;
+  background-color: var(--off-white);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.header-button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 1rem;
+  background-image: url("assets/icons/down-arrow.svg");
+}
