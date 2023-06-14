@@ -1,0 +1,75 @@
+h2 {
+  margin-left: 40px;
+}
+.container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin: 40px;
+  background: papayawhip;
+}
+
+.container:hover .box {
+  transform: scale(1.2);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  transition: transform 300ms;
+  background: aquamarine;
+}
+
+.box2 {
+  transition: transform 600ms;
+  background: skyblue;
+}
+
+.box3 {
+  transition: transform 1000ms;
+  background: teal;
+}
+
+.container2:hover .circle {
+  transform: translateX(400px);
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.one {
+  background: teal;
+  transition: transform 1s linear;
+  transition-delay: 0.5s;
+}
+
+.two {
+  background: aqua;
+  transition: transform 1s ease;
+  transition-delay: 1s;
+}
+
+.three {
+  background: aquamarine;
+  transition: transform 1.5s ease-in;
+  transition-delay: 1.5s;
+}
+
+.four {
+  background: lightblue;
+  transition: transform 2s ease-out;
+  transition-delay: 2s;
+}
+
+.five {
+  background: lemonchiffon;
+  transition: transform 1s ease-in-out;
+  transition-delay: 2.5s;
+}

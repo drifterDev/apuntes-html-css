@@ -1,0 +1,63 @@
+.one {
+  background: teal;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: transform 1.5s linear;
+}
+
+.one:hover {
+  transform: translateX(200px);
+  transition: transform 1s linear;
+}
+
+ul {
+  width: 200px;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.nav li:hover > ul {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 300ms;
+}
+
+.nav li ul {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  transition: opacity 400ms;
+  transition-delay: 300ms;
+}
+
+.nav li ul li {
+  position: relative;
+}
+.nav li ul li {
+  right: -10px;
+}
+
+.two {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.container:hover .two {
+  transform: translateX(200px);
+}
+.container {
+  background: papayawhip;
+}

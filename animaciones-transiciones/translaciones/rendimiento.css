@@ -1,0 +1,26 @@
+/* El media es para las personas que no quieran animaciones en la web */
+@media (prefers-reduced-motion: no-preference) {
+  button {
+    background: teal;
+    width: 100px;
+    height: 30px;
+  }
+
+  .better {
+    will-change: transform;
+    transition: transform 0.5s;
+  }
+
+  .better:hover {
+    transform: translateY(10px);
+  }
+
+  .worst {
+    will-change: margin-top;
+    transition: margin-top 0.5s;
+  }
+
+  .worst:hover {
+    margin-top: 10px;
+  }
+}
