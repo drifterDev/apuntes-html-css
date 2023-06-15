@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lego Store</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.ibb.co/MMmDPXN/lego.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- main content -->
+      <section class="container">
+        <nav class="navbar">
+          <div class="navbar__content">
+            <img src="https://i.ibb.co/MMmDPXN/lego.png" alt="logo" />
+            <ul>
+              <li><a href="#">EXCLUSIVOS</a></li>
+              <li><a href="#">NUEVOS</a></li>
+              <li><a href="#">GIFT CARDS</a></li>
+              <li><a href="#">FIND A STORE</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="main-content">
+          <p>Diseña tu</p>
+          <h1>Súper Héroe!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Necessitatibus laboriosam obcaecati autem officia quidem cumque,
+            iusto quos nisi facilis, nostrum numquam optio, vitae voluptates.
+            Quisquam officiis incidunt laboriosam cumque tempore.
+          </p>
+        </section>
+        <section class="side-content">
+          <p>Superman</p>
+          <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Superman" />
+          <div></div>
+        </section>
+        <section class="footer">
+          <div id="button1">
+            <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="Spiderman" />
+          </div>
+          <div id="button2">
+            <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="Robin" />
+          </div>
+          <div id="button3">
+            <img src="https://i.ibb.co/M18p91c/batman.webp" alt="Batman" />
+          </div>
+        </section>
+      </section>
+      <!-- loader -->
+      <section class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <!-- modal -->
+      <section class="modal hidden">
+        <div class="modal__content">
+          <img
+            class="modal__content--close"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABq0lEQVR4nO2WS0oDQRCGv73BlQY1EVGDeheNax8n0MSFxIu4U/EAEo2rGO+hoHgLTdzEZBhp+ANNZ5xHj0EX+WCg6aqu6q7pqmqYMiUby0AdeARegU99ZtwBakCZCVACLoEBECZ8AdAEVn7L+S7QlfE+cAPsAZvAjD4z3pesL12zpprX+YlOFOpUqynWrAF3VjTML/M+eQAMgVOP9Q2tDXwiUbLC7uPc3oSx8QEsZll4bYU9Ly3ZMpc4daoNdZmi/vkRUIyYL0rmsi5bA0U2kbp2bG60y7Fkz84mipoLpePSjJGN0ZGySSsX29FoE1FzLoeSt0nBm5Q3fpC7DpOcozoRqmIm0pNyIUZnHniyqp8xvBCjX5CesZ1I13MDcWk2a6Xj//8Fnb++hLUJpmFUnRijrKLRV2PJW4gqWQuR4Uo7Nl0tL/eydZFl0ZKVDaah+HImG+8JaRpJ1WrHDU/no3a8jSd160HSUmNJomKFPdClzsWOCsjoSWZu9AGwpWJV0Nik2i3wZYXd++Quc8B5ykfpQL0/0wMkLSWl2gPwotre07gtWepUmzLF8A3lSrGRZtYFBAAAAABJRU5ErkJggg=="
+          />
+          <div class="modal__content--slider">
+            <input type="radio" name="slider1" id="radio1" checked />
+            <input type="radio" name="slider1" id="radio2" />
+            <input type="radio" name="slider1" id="radio3" />
+            <div class="cards">
+              <label for="radio1" id="card1" class="card">
+                <img src="https://i.ibb.co/M18p91c/batman.webp" alt="Batman" />
+              </label>
+              <label for="radio2" id="card2" class="card">
+                <img
+                  src="https://i.ibb.co/tKWqw8J/spiderman.png"
+                  alt="Spiderman"
+                />
+              </label>
+              <label for="radio3" id="card3" class="card">
+                <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="Robin" />
+              </label>
+            </div>
+            <button>Lo quiero!</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
