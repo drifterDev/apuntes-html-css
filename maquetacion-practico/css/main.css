@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap");
 
 * {
   padding: 0;
@@ -7,11 +7,11 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 62.5%;
 }
 
-body {
+.home-body {
   position: fixed;
   left: 0;
   right: 0;
@@ -23,6 +23,11 @@ a {
   text-decoration: none;
   display: inline;
   color: black;
+}
+
+.grid-container {
+  max-width: 980px;
+  margin: auto;
 }
 
 header {
@@ -52,6 +57,11 @@ header .header-icons-container .icons {
 
 header .icons span {
   color: white;
+  transition: all 300ms;
+}
+
+header .icons span:hover {
+  color: #22272d;
 }
 
 nav {
@@ -91,7 +101,7 @@ nav .profile-link a {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-image: url("/maquetacion-practico/assets/img/Cover.png");
+  background-image: url("../assets/img/Cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +111,7 @@ nav .profile-link a {
   color: white;
   font-size: 3.8rem;
   display: inline-block;
-  width: 700px;
+  width: 800px;
   letter-spacing: 8px;
   text-align: center;
   margin-top: 150px;
@@ -111,10 +121,6 @@ nav .profile-link a {
   margin-top: 50px;
   width: 100px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
   background: RGB(61, 198, 162);
 }
 
@@ -123,6 +129,115 @@ nav .profile-link a {
 }
 
 .home-main .home-main-button a {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  height: 100%;
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  width: 100%;
+  background-color: RGB(223, 227, 233);
+  padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+.blogs-main-new h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.blogs-news-img-container {
+  grid-column: 1;
+}
+
+.blogs-news-img-container img {
+  width: 85%;
+}
+
+.blogs-news-info-container {
+  grid-column: 2;
+}
+
+.blogs-news-info-container h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.blogs-news-info-container p {
+  margin: 35px 0;
+  font-size: 1.6rem;
+}
+
+.blogs-posts-container {
+  padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.blogs-button {
+  border: 1px solid RGB(61, 198, 162);
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  transition: all 300ms;
+}
+
+.blogs-button:hover {
+  color: white;
+  background: RGB(61, 198, 162);
+}
+
+.blogs-posts-container .post-container {
+  display: inline-block;
+  padding-left: 10px;
+  max-width: 30%;
+}
+
+.blogs-posts-container .post-container {
+  margin: 20px 10px;
+}
+
+.blogs-posts-container .post-container p {
+  font-size: 1.4rem;
+  margin: 15px 0;
+}
+.blogs-posts-container .post-container a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.blogs-posts-container .post-container img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #22272d;
+  border-top: 35px solid RGB(61, 198, 162);
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.4rem;
 }
