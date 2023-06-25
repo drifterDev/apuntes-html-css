@@ -241,3 +241,61 @@ footer p {
   margin-top: 20px;
   font-size: 1.4rem;
 }
+
+.blogpost-img-container {
+  padding: 0 50px 40px;
+}
+
+.blogpost-img-container img {
+  width: 100%;
+}
+
+.blogpost-main-container {
+  padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  font-size: 1.8rem;
+  padding-bottom: 15px;
+}
+
+.blogpost-main-container article h1 {
+  font-size: 3.5rem;
+  margin: 20px 0;
+}
+
+.blogpost-main-container article p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.contact-main-container {
+  width: 100%;
+  min-height: 250px;
+  background-color: #e6e9ed;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.contact-main-container div {
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
+}
+.contact-main-container div a {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  font-size: 1.6rem;
+}
+
+.contact-main-container div p {
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+.contact-main-container .contact-left,
+.contact-right {
+  text-align: initial;
+  margin-top: 85px;
+}
+.contact-main-container img {
+  width: 100px;
+}
