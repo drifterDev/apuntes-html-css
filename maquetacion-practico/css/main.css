@@ -299,3 +299,68 @@ footer p {
 .contact-main-container img {
   width: 100px;
 }
+
+.profile-about-container {
+  background: #e6e9ed;
+  width: 100%;
+  padding: 50px;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.profile-image {
+  width: 100%;
+  padding: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+}
+
+.profile-info {
+  width: 100%;
+  padding: 30px 40px 0 10px;
+}
+
+.profile-info h2 {
+  font-size: 1.8rem;
+}
+
+.profile-info p {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.profile-projects-container > h2 {
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #cdd2da;
+}
+
+.profile-projects {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-project {
+  width: 100%;
+  padding: 0 10px 10px;
+  margin-bottom: 30px;
+}
+
+.profile-project h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.profile-project p {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.4rem;
+}
