@@ -37,8 +37,9 @@ body {
 .container {
   width: 250px;
   height: 350px;
+  border-radius: 20px;
   background: white;
-  border: 3px solid black;
+  border: 5px solid RGB(11, 36, 53);
 }
 
 #div1 {
