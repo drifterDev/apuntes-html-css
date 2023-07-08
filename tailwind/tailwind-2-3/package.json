@@ -1,20 +1,19 @@
 {
-  "name": "tailwind-1",
+  "name": "tailwind-2-3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/css/styles.css",
-    "dev": "postcss css/tailwind.css -o public/css/styles.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "tailwind"
   ],
   "author": "Mateo Álvarez <maalvarezmu@unal.edu.co>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss-cli": "^10.1.0",
+    "postcss": "^8.4.25",
     "tailwindcss": "^3.3.2"
   }
 }
