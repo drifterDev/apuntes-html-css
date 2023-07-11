@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .container {
+        background: #ccc;
+        height: 100vh;
+      }
+
+      .container div {
+        background: orange;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="w-96 h-40 mb-10">Tamaño fijo</div>
+
+      <div class="w-9/12 h-3/6 mb-10">Tamaño porcentaje</div>
+
+      <div class="w-screen h-screen">Pantalla completa</div>
+    </div>
+  </body>
+</html>
