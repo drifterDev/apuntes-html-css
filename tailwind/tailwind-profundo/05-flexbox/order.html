@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .container {
+        margin: 100px auto;
+      }
+
+      .container div {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        color: #fff;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body class="bg-blue-300">
+    <!-- Order -->
+    <div class="container bg-blue-500 flex">
+      <div class="bg-blue-800 flex-auto order-last">A</div>
+      <div class="bg-yellow-500 flex-auto order-first">B</div>
+      <div class="bg-blue-800 flex-auto order-3">C</div>
+      <div class="bg-blue-800 flex-auto order-1">D</div>
+      <div class="bg-blue-800 flex-auto order-2">E</div>
+    </div>
+  </body>
+</html>
