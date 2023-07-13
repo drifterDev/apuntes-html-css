@@ -1,0 +1,17 @@
+@layer components {
+  .hero {
+    @apply container mx-auto flex py-24 flex-col md:flex-row items-center;
+  }
+
+  .hero-img {
+    @apply md:w-1/2 w-5/6 mb-10 md:mb-0;
+  }
+
+  .hero-body {
+    @apply md:w-1/2 md:pl-16 flex flex-col md:items-start  md:text-left items-center text-center;
+  }
+
+  .hero-title {
+    @apply text-4xl mb-4 font-medium text-gray-900;
+  }
+}
