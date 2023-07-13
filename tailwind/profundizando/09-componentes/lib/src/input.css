@@ -1,4 +1,6 @@
 @import url("../../public/buttons/botones.css");
+@import url("../../public/dropdown/dropdown.css");
+@import url("../../public/card/cards.css");
 
 @tailwind base;
 @tailwind components;
