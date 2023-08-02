@@ -1,0 +1,329 @@
+<!--
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto 2</title>
+    <link rel="icon" type="favicon/x-icon" href="images/supertux.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Comienzo de la cabecera -->
+    <header id="header">
+      <div class="wrap">
+        <div id="logo">
+          <span class="gear">S</span>
+          <h3>BLOG</h3>
+        </div>
+
+        <nav id="menu">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Formacion</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Final de la cabecera -->
+
+    <section class="wrap">
+      <section id="info">
+        <!-- Inicio banner -->
+        <div id="banner">
+          <h1>Proyecto aplicando animaciones, transiciones y responsive</h1>
+        </div>
+        <!-- Final del banner -->
+
+        <!-- Inicio de tarjetas -->
+        <div id="cards">
+          <div class="card">
+            <p class="icon">H</p>
+            <h2 class="category">Desarrollo web</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum
+              minima a accusantium laborum accusamus tenetur, adipisci culpa!
+              Corrupti vitae est repudiandae! Nobis ipsa minima ab saepe libero
+              obcaecati eius.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="icon">_</p>
+            <h2 class="category">Sistemas operativos</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum
+              minima a accusantium laborum accusamus tenetur, adipisci culpa!
+              Corrupti vitae est repudiandae! Nobis ipsa minima ab saepe libero
+              obcaecati eius.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="icon">S</p>
+            <h2 class="category">Hardware</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum
+              minima a accusantium laborum accusamus tenetur, adipisci culpa!
+              Corrupti vitae est repudiandae! Nobis ipsa minima ab saepe libero
+              obcaecati eius.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="icon">u</p>
+            <h2 class="category">Redes e internet</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum
+              minima a accusantium laborum accusamus tenetur, adipisci culpa!
+              Corrupti vitae est repudiandae! Nobis ipsa minima ab saepe libero
+              obcaecati eius.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="icon">a</p>
+            <h2 class="category">Bases de datos</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum
+              minima a accusantium laborum accusamus tenetur, adipisci culpa!
+              Corrupti vitae est repudiandae! Nobis ipsa minima ab saepe libero
+              obcaecati eius.
+            </p>
+          </div>
+        </div>
+        <!-- final de tarjetas -->
+      </section>
+      <div class="clearfix"></div>
+      <!-- Inicio barra lateral -->
+      <aside id="lateral">
+        <h3>BUSCAR</h3>
+        <div id="search">
+          <form action="">
+            <input type="text" name="" id="" />
+            <input type="button" value="L" class="icon" />
+          </form>
+        </div>
+
+        <h3>LOGIN</h3>
+        <div id="login" class="aside-box">
+          <form action="">
+            <label id="user" class="icon">U</label>
+            <input type="email" name="" id="" />
+            <label id="password" class="icon">w</label>
+            <input type="password" name="" id="" />
+            <input type="submit" value="Entrar" />
+            <input type="reset" value="Limpiar" /><br />
+            <a href="#">Registrate aquí</a>
+            <a href="#">¿Has olvidado la contraseña?</a>
+          </form>
+        </div>
+
+        <h3>CONTACTO</h3>
+        <div id="social" class="aside-box">
+          <div class="twitter">
+            <a href="#" class="icon">t</a>
+            <p class="overlay">Twitter</p>
+          </div>
+          <div class="facebook">
+            <a href="#" class="icon">f</a>
+            <p class="overlay">Facebook</p>
+          </div>
+          <div class="youtube">
+            <a href="#" class="icon">y</a>
+            <p class="overlay">YouTube</p>
+          </div>
+        </div>
+
+        <h3>PATROCINADORES</h3>
+        <div id="sponsors" class="aside-box"></div>
+      </aside>
+      <!-- fin de la barra lateral -->
+
+      <!-- inicio articulos -->
+      <section id="articles">
+        <h2>Últimos artículos</h2>
+        <div class="clearfix"></div>
+        <article>
+          <div class="data">
+            <span>Fecha: 21 may</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            asperiores nulla quo tenetur doloremque? Facere, fuga. Dignissimos
+            obcaecati id vero veniam illo, modi porro voluptas deserunt?
+            Corporis earum possimus eum! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iste velit quod, consequatur sunt aliquid
+            molestias nesciunt qui vero quisquam voluptatibus vel delectus
+            corporis, debitis, doloribus vitae ullam consequuntur saepe ratione!
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 21 may</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            asperiores nulla quo tenetur doloremque? Facere, fuga. Dignissimos
+            obcaecati id vero veniam illo, modi porro voluptas deserunt?
+            Corporis earum possimus eum! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quas laborum voluptatum neque distinctio eveniet
+            unde omnis tenetur repellat reprehenderit quod velit doloribus
+            voluptate eligendi, animi numquam nostrum ut quasi quisquam?
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 21 may</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            asperiores nulla quo tenetur doloremque? Facere, fuga. Dignissimos
+            obcaecati id vero veniam illo, modi porro voluptas deserunt?
+            Corporis earum possimus eum! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Accusamus amet illo cupiditate dolores velit?
+            Vitae eos animi laudantium, cumque nemo praesentium libero dolorem,
+            dolores, enim laborum est officiis fugit ut.
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 21 may</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            asperiores nulla quo tenetur doloremque? Facere, fuga. Dignissimos
+            obcaecati id vero veniam illo, modi porro voluptas deserunt?
+            Corporis earum possimus eum! Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Totam molestias qui deleniti, sit sint repudiandae
+            eveniet illum reiciendis laboriosam aliquam modi minus molestiae
+            iure, nisi, vitae earum impedit placeat cum.
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 21 may</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+            asperiores nulla quo tenetur doloremque? Facere, fuga. Dignissimos
+            obcaecati id vero veniam illo, modi porro voluptas deserunt?
+            Corporis earum possimus eum! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Mollitia, maiores ducimus perspiciatis optio
+            soluta obcaecati suscipit magnam illo quas ea id in magni modi quasi
+            deleniti doloribus error minus aperiam!
+          </p>
+        </article>
+        <article id="blog">
+          <a href="#">Ir al blog</a>
+        </article>
+      </section>
+      <!-- final articulos -->
+    </section>
+
+    <!-- Inicio de pie de pagina -->
+
+    <div class="clearfix"></div>
+    <footer id="footer">
+      <div class="wrap">
+        <div id="menu-footer">
+          <h5>MENÚ</h5>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Formacion</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div id="location">
+          <h5>¿Donde estamos?</h5>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9165812719857!2d-75.59518572515766!3d6.274698593714059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293be2b564b7%3A0x12cc8ddcb9f6d6e4!2sFacultad%20de%20Minas!5e0!3m2!1ses!2sco!4v1684719775914!5m2!1ses!2sco"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div id="info">
+          <h5>Desarrollado con</h5>
+          <p>
+            <img
+              src="images/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
+              alt="tecnologias_usadas"
+            />
+          </p>
+          <h5>Optimizado para</h5>
+          <p id="browsers">
+            <a href="#">
+              <img
+                src="images/firefox-icon.png"
+                alt="firefox"
+                title="firefox"
+              />
+            </a>
+            <a href="#">
+              <img src="images/chrome.png" alt="chrome" title="chrome" />
+            </a>
+            <a href="#">
+              <img src="images/Opera_256x256.png" alt="opera" title="opera" />
+            </a>
+            <a href="#">
+              <img src="images/safari.png" alt="safari" title="safari" />
+            </a>
+            <a href="#">
+              <img src="images/android.png" alt="android" title="android" />
+            </a>
+            <a href="#">
+              <img src="images/ios.png" alt="ios" title="ios" />
+            </a>
+          </p>
+          <h5>AUTOR</h5>
+          <p>&copy; Mateo Álvarez Murillo - github.com/drifterDev</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Final de pie de pagina -->
+  </body>
+</html>

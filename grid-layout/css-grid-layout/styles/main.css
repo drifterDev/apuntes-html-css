@@ -1,0 +1,150 @@
+/* 
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio. 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  --gray: #4d6c73;
+  --blue: #04d9b2;
+  --blue-dark: #1c6378;
+  --green: #04d99d;
+  --white: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-image: radial-gradient(
+    circle,
+    #04d99d,
+    #00d9a3,
+    #00d9a8,
+    #00d9ad,
+    #04d9b2
+  );
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "header header header header header header header"
+    "relleno2 main main main main main relleno"
+    "relleno2 main main main main main relleno"
+    "relleno2 main main main main main relleno"
+    "relleno2 main main main main main relleno"
+    "relleno2 main main main main main relleno"
+    "relleno2 main main main main main relleno"
+    "footer footer footer footer footer footer footer";
+  gap: 20px;
+}
+
+header {
+  border-radius: 10px;
+  grid-area: header;
+  height: 100%;
+  width: 100%;
+  background: var(--gray);
+  border: 3px solid black;
+}
+
+main {
+  border-radius: 10px;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  grid-area: main;
+  background: var(--green);
+  border: 3px solid black;
+}
+
+footer {
+  grid-area: footer;
+  background: var(--blue-dark);
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.relleno {
+  width: 100%;
+  height: 100%;
+  background: var(--blue);
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.relleno1 {
+  grid-area: relleno;
+}
+
+.relleno2 {
+  grid-area: relleno2;
+}
+
+.div {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  border: 3px solid black;
+}
+
+.div1,
+.div6,
+.div8 {
+  background: var(--blue);
+}
+
+.div2,
+.div4,
+.div9 {
+  background: var(--blue-dark);
+}
+
+.div3,
+.div5,
+.div7 {
+  background: var(--gray);
+}
+
+@media (max-width: 950px) {
+  main {
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .relleno {
+    display: none;
+  }
+  .container {
+    grid-template-areas:
+      "header header header header header header header"
+      "main main main main main main main"
+      "main main main main main main main"
+      "main main main main main main main"
+      "main main main main main main main"
+      "main main main main main main main"
+      "footer footer footer footer footer footer footer";
+  }
+}

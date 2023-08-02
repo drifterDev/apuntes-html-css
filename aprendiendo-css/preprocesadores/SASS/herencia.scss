@@ -1,0 +1,22 @@
+/* 
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio. 
+*/
+
+//Herencia
+%alert-normal {
+  border: 1px solid gray;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.alert {
+  @extend %alert-normal;
+}
+
+#fecha {
+  @extend %alert-normal;
+}

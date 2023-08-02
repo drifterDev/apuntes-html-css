@@ -1,0 +1,29 @@
+/* 
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio. 
+*/
+
+@layer components {
+  .dropdown {
+    @apply relative flex items-center p-0;
+  }
+
+  .row {
+    @apply border-l p-2 border-gray-700;
+  }
+
+  .dropdown-body {
+    @apply left-0 absolute top-full hidden group-focus:block w-full shadow-md mt-1 rounded bg-gray-600;
+  }
+
+  .dropdown-body .list {
+    @apply text-left border rounded;
+  }
+
+  .dropdown-body .list .list-items {
+    @apply px-4 py-1 border-b border-gray-500 hover:bg-gray-500;
+  }
+}

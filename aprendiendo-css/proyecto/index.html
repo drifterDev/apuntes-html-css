@@ -1,0 +1,311 @@
+<!--
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto 1</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Inicio de la cabecera -->
+    <header id="header">
+      <figure id="logotipo">
+        <img src="images/logo.png" alt="Logotipo de la pagina" />
+      </figure>
+      <h1>
+        <a href="index.html">Proyecto aplicando propiedades basicas de css</a>
+      </h1>
+    </header>
+    <!-- Fin de la cabecera -->
+
+    <!-- Menu de navegación -->
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">Contenido</a></li>
+        <li><a href="index.html">Requerimientos</a></li>
+        <li>
+          <a href="index.html">Lenguajes</a>
+          <ul>
+            <li><a href="index.html">Python</a></li>
+            <li><a href="index.html">Java</a></li>
+            <li><a href="index.html">C++</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html">Frameworks</a>
+          <ul>
+            <li><a href="index.html">Tailwind</a></li>
+            <li><a href="index.html">Alpine.js</a></li>
+            <li><a href="index.html">Laravel</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html">Proyectos</a></li>
+        <li><a href="index.html">Estudiante</a></li>
+        <li><a href="index.html">Reseñas</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="index.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- fin del menu de navegacion -->
+
+    <!-- Inicio de main -->
+    <!-- Inicio de la barra lateral -->
+    <div id="content">
+      <aside id="aside">
+        <div class="widget" id="login">
+          <h3>Entrar a la web</h3>
+          <form action="">
+            <label for="usuario">Usuario:</label><br />
+            <input type="text" id="usuario" />
+
+            <label for="contrasena">Contraseña:</label><br />
+            <input type="password" id="contrasena" />
+            <input type="submit" value="Entrar" />
+          </form>
+          <a href="#">Zona de alumnos</a>
+          <a href="#">Zona de docentes</a>
+          <a href="#">Calificaciones</a>
+        </div>
+
+        <div class="widget" id="aula1">
+          <h3>Aula virtual 1</h3>
+          <form action="">
+            <label for="usuario">Nombre de usuario</label><br />
+            <input type="text" id="usuario" />
+
+            <label for="contrasena">Contraseña</label><br />
+            <input type="password" id="contrasena" />
+            <input type="submit" value="Entrar" />
+          </form>
+        </div>
+
+        <div class="widget" id="aula2">
+          <h3>Aula virtual 2</h3>
+          <form action="">
+            <label for="usuario">Nombre de usuario</label><br />
+            <input type="text" id="usuario" />
+
+            <label for="contrasena">Contraseña</label><br />
+            <input type="password" id="contrasena" />
+            <input type="submit" value="Entrar" />
+          </form>
+        </div>
+
+        <div class="widget" id="enlaces">
+          <h3>Enlaces de interés</h3>
+          <ul>
+            <li><a href="#">Framework Alpine.js</a></li>
+            <li><a href="#">Framework Laravel</a></li>
+            <li><a href="#">Framework Livewire</a></li>
+            <li><a href="#">Framework Boostrap</a></li>
+            <li><a href="#">Framework Tailwind</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Final de la barra lateral -->
+
+      <!-- Comienzo de la section del main -->
+
+      <div id="sections">
+        <section id="frontend">
+          <span class="stickers">
+            <img class="stickerone" src="images/scotch.png" alt="pegatina" />
+            <img class="stickertwo" src="images/scotch.png" alt="pegatina" />
+          </span>
+          <h2 class="titulo">Noticias de frontend</h2>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+        </section>
+
+        <section id="backend">
+          <span class="stickers">
+            <img class="stickerone" src="images/scotch.png" alt="pegatina" />
+            <img class="stickertwo" src="images/scotch.png" alt="pegatina" />
+          </span>
+          <h2 class="titulo">Noticias de backend</h2>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+        </section>
+
+        <section id="Academia">
+          <span class="stickers">
+            <img class="stickerone" src="images/scotch.png" alt="pegatina" />
+            <img class="stickertwo" src="images/scotch.png" alt="pegatina" />
+          </span>
+          <h2 class="titulo">Noticias de la academia</h2>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+          <article class="article">
+            <span class="icon">a</span>
+            <p>
+              <a href="#">Titulo de la entrada</a>Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Placeat rerum fugiat doloremque fuga
+              consequatur eaque quo optio culpa possimus est eos totam iure
+              autem rem, eum eveniet sed. Excepturi, nesciunt?
+            </p>
+            <span class="date">[10/05/2023. Mateo Álvarez]</span>
+          </article>
+        </section>
+      </div>
+
+      <aside id="frase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia quo
+        dignissimos voluptatibus tempore amet.
+        <a href="#">Leer más</a>
+      </aside>
+      <div class="clearfix"></div>
+      <div id="history">
+        <a href="#">[Ver historico de Noticias]</a>
+      </div>
+      <!-- Final de la section del main -->
+    </div>
+
+    <!-- Final del main -->
+
+    <!-- Comienzo del footer -->
+    <div class="clearfix"></div>
+
+    <footer id="footer">
+      <p>&copy; Página web creada por Mateo Álvarez</p>
+      <p>
+        Más proyectos y paginas de prueba en
+        <a href="#">github.com/drifterDev</a>
+      </p>
+    </footer>
+    <!-- Final del footer  -->
+  </body>
+</html>

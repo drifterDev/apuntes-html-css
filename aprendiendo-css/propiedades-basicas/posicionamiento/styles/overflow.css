@@ -1,0 +1,41 @@
+/* 
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio. 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  background-color: gainsboro;
+  width: 100rem;
+  height: 60rem;
+}
+
+.caja {
+  background-color: aquamarine;
+  margin: 2rem;
+  width: 20rem;
+  height: 100%;
+  font-size: large;
+  /*
+  Overflow scroll (Crea una barra lateral para bajar)
+  overflow hidden (Esconde el contenido que se sale)
+  overflow-y (eje y)
+  overflow-x (eje x)
+  */
+  overflow-y: scroll;
+}

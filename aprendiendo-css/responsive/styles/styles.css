@@ -1,0 +1,118 @@
+/*
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  background-color: yellowgreen;
+  margin: 4rem auto;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  background-color: aquamarine;
+  color: #333;
+  height: 15rem;
+  line-height: 15rem;
+}
+
+aside {
+  width: 25%;
+  background-color: #ccc;
+  float: left;
+  min-height: 70rem;
+  text-align: center;
+  line-height: 70rem;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+footer {
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+#articles {
+  background-color: lemonchiffon;
+  width: 75%;
+  float: left;
+  min-height: 70rem;
+}
+
+#articles article {
+  width: 25%;
+  height: 15rem;
+  background-color: greenyellow;
+  color: white;
+  line-height: 15rem;
+  text-align: center;
+  min-width: 15rem;
+  border: 0.2rem solid white;
+  float: left;
+  margin: 3rem;
+}
+
+/* media queries */
+
+@media (max-width: 880px) {
+  #articles article {
+    width: 40%;
+    background-color: rebeccapurple;
+  }
+
+  #articles {
+    width: 100%;
+  }
+
+  aside {
+    float: none;
+    min-height: auto;
+    line-height: 2rem;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 632px) and (max-height: 600px) {
+  #articles article {
+    width: 80%;
+    background-color: rosybrown;
+  }
+}

@@ -1,0 +1,42 @@
+<!--
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .container div {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mx-auto py-10">
+      <!-- Border -->
+      <h1 class="text-4xl mb-2">Border</h1>
+      <div
+        class="w-40 h-40 mr-4 bg-blue-200 border border-blue-600 border-dashed rounded-full"
+      ></div>
+      <div
+        class="w-40 h-40 mr-4 bg-blue-200 border-4 border-blue-600 rounded"
+      ></div>
+      <div
+        class="w-40 h-40 mr-4 bg-blue-100 border-t-4 border-blue-600 border-dotted rounded-3xl"
+      ></div>
+      <div class="w-40 h-40 mr-4 bg-blue-100 border-r-4 border-blue-600"></div>
+      <div class="w-40 h-40 mr-4 bg-blue-100 border-b-4 border-blue-600"></div>
+      <div class="w-40 h-40 mr-4 bg-blue-100 border-l-4 border-blue-600"></div>
+    </div>
+  </body>
+</html>

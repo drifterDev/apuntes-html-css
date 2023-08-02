@@ -1,0 +1,17 @@
+/* 
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio. 
+*/
+
+//Bucles
+
+//FOR
+$contador: 1;
+@for $contador from 1 through 8 {
+  #listado ul li:nth-child(#{$contador}) {
+    font-size: 4px * $contador;
+  }
+}

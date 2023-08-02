@@ -1,0 +1,4 @@
+node_modules/
+public/styles/
+public/styles/*.css
+package-lock.json

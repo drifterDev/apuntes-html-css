@@ -1,0 +1,33 @@
+<!--
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="h-screen bg-blue-500 flex justify-center items-center">
+    <!-- Transition -->
+    <div
+      class="w-40 h-40 bg-white hover:bg-black hover:rotate-45 transition-all duration-500 delay-1000"
+    ></div>
+  </body>
+</html>

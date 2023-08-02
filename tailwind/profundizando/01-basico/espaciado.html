@@ -1,0 +1,95 @@
+<!--
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaciado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      h1 {
+        font-size: 50px !important;
+      }
+
+      body {
+        padding: 50px;
+      }
+
+      #padding div {
+        height: 200px;
+        display: inline-block;
+        background: crimson;
+        margin-bottom: 100px;
+      }
+
+      #margin div {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        background: lightseagreen;
+        margin-bottom: 100px;
+      }
+
+      #space div {
+        width: 50px;
+        height: 50px;
+        background: orange;
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Padding -->
+    <!--  
+          p
+          pl
+          pr
+          pt
+          pb
+          px
+          py
+     -->
+    <h1>Padding</h1>
+    <div id="padding">
+      <div class="pt-12 pb-24 pl-48 pr-20">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut nulla
+        magnam ullam ad.
+      </div>
+    </div>
+
+    <!-- Margin -->
+    <!--  
+          m
+          ml
+          mr
+          mt
+          mb
+          mx
+          my
+          m-auto
+          my-auto
+          mx-auto
+     -->
+    <h1>Margin</h1>
+    <div id="margin">
+      <div class="mb-20 md:ml-20"></div>
+    </div>
+
+    <h1>Space</h1>
+    <div id="space" class="space-y-2">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

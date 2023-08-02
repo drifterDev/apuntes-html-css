@@ -1,0 +1,391 @@
+/*
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Mono", monospace;
+  font-size: 62.5%;
+}
+
+.home-body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+
+.grid-container {
+  max-width: 980px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+header .header-icons-container {
+  width: 100%;
+  height: 50px;
+  background: RGB(61, 198, 162);
+  display: grid;
+}
+
+header .header-icons-container .icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+
+header .icons span {
+  color: white;
+  transition: all 300ms;
+}
+
+header .icons span:hover {
+  color: #22272d;
+}
+
+nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 90px;
+}
+
+nav .nav-logo-container {
+  margin-left: 20px;
+}
+
+nav .nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+}
+
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+nav .profile-link a {
+  font-size: 1.4rem;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.home-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/img/Cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-main .home-main-text {
+  color: white;
+  font-size: 3.8rem;
+  display: inline-block;
+  width: 800px;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.home-main .home-main-button {
+  margin-top: 50px;
+  width: 100px;
+  height: 40px;
+  background: RGB(61, 198, 162);
+}
+
+.home-main .home-main-button:hover {
+  cursor: pointer;
+}
+
+.home-main .home-main-button a {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.blogs-main {
+  display: grid;
+}
+
+.blogs-news-container {
+  width: 100%;
+  background-color: RGB(223, 227, 233);
+  padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+.blogs-main-new h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.blogs-news-img-container {
+  grid-column: 1;
+}
+
+.blogs-news-img-container img {
+  width: 85%;
+}
+
+.blogs-news-info-container {
+  grid-column: 2;
+}
+
+.blogs-news-info-container h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.blogs-news-info-container p {
+  margin: 35px 0;
+  font-size: 1.6rem;
+}
+
+.blogs-posts-container {
+  padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.blogs-button {
+  border: 1px solid RGB(61, 198, 162);
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  transition: all 300ms;
+}
+
+.blogs-button:hover {
+  color: white;
+  background: RGB(61, 198, 162);
+}
+
+.blogs-posts-container .post-container {
+  display: inline-block;
+  padding-left: 10px;
+  max-width: 30%;
+}
+
+.blogs-posts-container .post-container {
+  margin: 20px 10px;
+}
+
+.blogs-posts-container .post-container p {
+  font-size: 1.4rem;
+  margin: 15px 0;
+}
+.blogs-posts-container .post-container a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.blogs-posts-container .post-container img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #22272d;
+  border-top: 35px solid RGB(61, 198, 162);
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.blogpost-img-container {
+  padding: 0 50px 40px;
+}
+
+.blogpost-img-container img {
+  width: 100%;
+}
+
+.blogpost-main-container {
+  padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  font-size: 1.8rem;
+  padding-bottom: 15px;
+}
+
+.blogpost-main-container article h1 {
+  font-size: 3.5rem;
+  margin: 20px 0;
+}
+
+.blogpost-main-container article p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.contact-main-container {
+  width: 100%;
+  min-height: 250px;
+  background-color: #e6e9ed;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.contact-main-container div {
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
+}
+.contact-main-container div a {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  font-size: 1.6rem;
+}
+
+.contact-main-container div p {
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+.contact-main-container .contact-left,
+.contact-right {
+  text-align: initial;
+  margin-top: 85px;
+}
+.contact-main-container img {
+  width: 100px;
+}
+
+.profile-about-container {
+  background: #e6e9ed;
+  width: 100%;
+  padding: 50px;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.profile-image {
+  width: 100%;
+  padding: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+}
+
+.profile-info {
+  width: 100%;
+  padding: 30px 40px 0 10px;
+}
+
+.profile-info h2 {
+  font-size: 1.8rem;
+}
+
+.profile-info p {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.profile-projects-container > h2 {
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #cdd2da;
+}
+
+.profile-projects {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-project {
+  width: 100%;
+  padding: 0 10px 10px;
+  margin-bottom: 30px;
+}
+
+.profile-project h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.profile-project p {
+  display: inline-block;
+  width: 90%;
+  font-size: 1.4rem;
+}

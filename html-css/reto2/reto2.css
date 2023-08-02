@@ -1,0 +1,128 @@
+/*
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  width: 100%;
+  height: 10vh;
+  background: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  font-size: 1.6rem;
+  color: RGB(32, 100, 157);
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vh;
+  height: 10vw;
+}
+
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.lateral_section {
+  display: grid;
+  padding: 7px 5px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background: RGB(169, 226, 254);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.caja {
+  background: RGB(32, 100, 157);
+  margin: 7px 2px;
+  width: 90%;
+  height: 90%;
+}
+
+.main_section {
+  padding: 20px;
+  background: RGB(215, 248, 141);
+  width: 100%;
+  height: 80vh;
+}
+
+.main_section span {
+  color: RGB(32, 100, 157);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+footer {
+  background: RGB(32, 100, 157);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+.redes {
+  margin: 0 20px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+}

@@ -1,0 +1,449 @@
+/*
+MIT License
+
+Copyright (c) 2023 Mateo Álvarez Murillo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+*/
+
+/* Fuentes */
+@font-face {
+  font-family: "nevis";
+  src: url("../fonts/nevis.eot");
+  src: url("../fonts/nevis.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/nevis.woff") format("woff"),
+    url("../fonts/nevis.ttf") format("truetype"),
+    url("../fonts/nevis.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fajala";
+  src: url("../fonts/FjallaOne-Regular.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")
+      format("svg"),
+    url("../fonts/websymbols-regular-webfont.eot");
+  src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embeded"),
+    url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/paven.png");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 0.1rem solid #c9c9c9;
+  box-shadow: 0rem 0rem 0.2rem #ccc inset;
+  background: white;
+  padding: 0.2rem 1rem;
+  color: gray;
+  transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  outline: none;
+  border: 0.1rem solid #70b231;
+  color: black;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  display: block;
+  border-radius: 0.2rem;
+  width: 6rem;
+  padding: 0.3rem;
+  border: 0.1rem solid green;
+  cursor: pointer;
+  color: white;
+  background-color: #70b231;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover {
+  box-shadow: 0rem 0rem 0.2rem gray;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active {
+  box-shadow: 0rem 0rem 0.3rem gray inset;
+  text-shadow: 0rem 0rem 0.1rem #ccc;
+}
+
+a {
+  color: #529125;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #529125;
+}
+
+a:hover {
+  color: #285616;
+}
+
+.icon {
+  font-family: "icons";
+  float: left;
+  margin-right: 0.5rem;
+  margin-top: -0.1rem;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+/* Cabecera */
+header {
+  font-family: "nevis";
+  min-width: 102.4rem;
+  width: 100%;
+  height: 25rem;
+  margin: 0rem auto;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header #logotipo {
+  width: 77rem;
+  margin: 0rem auto;
+  padding: 2rem;
+}
+
+header #logotipo img {
+  display: block;
+  text-align: center;
+  margin: 0rem auto;
+  width: 15rem;
+}
+
+header h1 {
+  letter-spacing: 0.4rem;
+  transition: all 300ms;
+  text-shadow: 0rem 0.2rem 0.1rem black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  color: #70b231;
+}
+
+header h1 a {
+  color: #70b231;
+}
+
+header h1:hover {
+  text-shadow: 0rem 0.2rem 0.1rem black, 0rem 0rem 0.6rem #70b231;
+}
+
+/* Menu de navegacion */
+nav {
+  font-family: sans-serif, Helvetica, Arial;
+  background-color: RGB(51, 51, 51);
+  min-width: 125rem;
+  font-size: 1.4rem;
+  box-shadow: 0rem 0rem 0.2rem gray;
+  width: 100%;
+  height: 4rem;
+  margin-top: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 105rem;
+}
+
+nav > ul > li {
+  line-height: 4rem;
+  float: left;
+  border-right: 0.1rem solid gray;
+  transition: all 0.3s;
+}
+
+nav > ul > li a {
+  display: block;
+  padding: 0 2rem;
+  text-decoration: none;
+  color: white !important;
+}
+
+nav > ul > li > a:first-child {
+  border-left: 0.1rem solid gray !important;
+}
+
+nav > ul > li:hover {
+  background-color: #70b231;
+  box-shadow: 0rem 0rem 0.4rem green inset;
+}
+
+/* Menus desplegables */
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  color: white;
+  text-align: left;
+  width: 12rem;
+  box-shadow: 0rem 0.2rem 0.2rem gray;
+  z-index: 1;
+}
+
+nav > ul > li:hover > ul {
+  display: block;
+}
+
+nav > ul > li > ul > li {
+  background-color: #f2f1f0;
+  border-bottom: 0.1rem solid #d6d6d6;
+  padding: 0.8rem;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+
+nav > ul > li > ul > li a {
+  color: #666666 !important;
+}
+
+nav > ul > li > ul > li:hover {
+  box-shadow: 0 0 0.6rem #ccc inset;
+}
+
+/* Contenido del main */
+
+#content {
+  width: 125rem;
+  min-height: 110rem;
+  margin: 0rem auto;
+}
+
+/* barra lateral */
+
+#aside,
+#frase {
+  width: 20rem;
+  float: left;
+  margin: 3rem;
+  background-color: white;
+  border: 0.1rem solid #ccc;
+  box-shadow: 0rem 0.2rem 0.2rem #ccc;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#frase {
+  width: 20rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#aside .widget {
+  display: block;
+  width: 18rem;
+  margin: 0.5rem auto;
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem dashed #333333;
+}
+
+#aside .widget:last-child {
+  margin-bottom: 2rem;
+}
+
+#aside h3 {
+  margin-bottom: 1.5rem;
+  display: block;
+  color: #333333;
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem 0;
+  background-color: #f2f1f0;
+  border: 0.1rem solid #ccc;
+  border-left: none;
+  border-right: none;
+  text-transform: initial;
+}
+
+#aside li {
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  list-style: square;
+}
+
+aside div a,
+#frase a {
+  color: #529125;
+  text-decoration: none;
+}
+
+aside div a:visited,
+#frase a {
+  color: #529125;
+}
+
+aside div a:hover,
+#frase a {
+  color: #285616;
+}
+
+/* formularios barra lateral */
+#aside div label {
+  display: block;
+  width: 95%;
+  margin: 0.2rem 0 -1.8rem;
+}
+
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a {
+  display: block;
+  width: 95%;
+  margin: 0.2rem 0;
+}
+
+#aside div input[type="submit"],
+#aside div input[type="button"],
+#aside div button {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#aside input,
+#aside label {
+  margin: 0rem auto;
+  text-align: center;
+}
+
+/* Secciones */
+#sections {
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 2rem;
+}
+
+#sections .titulo {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid #ccc;
+  margin-bottom: 0.5rem;
+  margin-top: -2rem;
+  font-family: "fajala";
+}
+
+#sections section {
+  margin-top: 4rem;
+  background-color: white;
+  padding: 2rem;
+  border: 0.1rem solir #ccc;
+  box-shadow: 0 0 0.4rem #c9c9c9;
+  color: #333333;
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+#sections .article {
+  margin: 2rem 1rem;
+}
+
+#sections .date {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+#sections .stickerone,
+#sections .stickertwo {
+  position: absolute;
+  margin-top: -4rem;
+  z-index: 0;
+}
+
+#sections .stickertwo {
+  margin-left: 86rem;
+}
+
+/* Footer */
+#history {
+  float: right;
+  clear: both;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#footer {
+  position: absolute;
+  left: -40px;
+  bottom: -120rem;
+  width: 100%;
+  background-color: #333333;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  margin: 4rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  box-shadow: 0 0 0.2rem gray;
+}

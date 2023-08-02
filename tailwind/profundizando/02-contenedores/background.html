@@ -1,0 +1,57 @@
+<!--
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .container div {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto py-10">
+      <!-- Background color -->
+      <h1 class="text-4xl mb-2">Background color</h1>
+      <div class="w-40 h-40 bg-black"></div>
+      <div class="w-40 h-40 bg-gray-500"></div>
+      <div class="w-40 h-40 bg-red-500"></div>
+      <div class="w-40 h-40 bg-yellow-500"></div>
+      <div class="w-40 h-40 bg-green-500"></div>
+      <div class="w-40 h-40 bg-blue-500"></div>
+      <div class="w-40 h-40 bg-indigo-500"></div>
+      <div class="w-40 h-40 bg-purple-500"></div>
+      <div class="w-40 h-40 bg-pink-500"></div>
+
+      <hr class="my-10" />
+
+      <!-- Fondo gradientes -->
+      <h1 class="text-4xl mb-2">Background Gradiente</h1>
+      <div class="w-72 h-40 bg-gradient-to-r from-green-400 to-blue-500"></div>
+      <div
+        class="w-72 h-40 bg-gradient-to-r from-indigo-500 via-cyan-500 to-red-500"
+      ></div>
+
+      <hr class="my-10" />
+
+      <!-- Imagen -->
+      <h1 class="text-4xl mb-2">Imagen de fondo</h1>
+      <div
+        class="w-96 h-96 bg-center bg-cover bg-no-repeat"
+        style="background-image: url(img/bg1.jpg)"
+      ></div>
+    </div>
+  </body>
+</html>

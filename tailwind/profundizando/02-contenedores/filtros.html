@@ -1,0 +1,110 @@
+<!--
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .elemento {
+        background-image: url("img/bg2.jpg");
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .elemento div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mx-auto py-10">
+      <div class="w-4/12 h-96 mx-auto border-2 elemento"></div>
+
+      <hr class="my-10" />
+
+      <h1 class="text-center text-4xl mb-2">Filtros</h1>
+
+      <div class="w-4/12 h-96 mx-auto elemento blur"></div>
+
+      <div class="w-4/12 h-96 mx-auto elemento brightness-150"></div>
+
+      <div class="w-4/12 h-96 mx-auto elemento contrast-200"></div>
+
+      <div class="w-4/12 h-96 mx-auto elemento grayscale"></div>
+
+      <div class="w-4/12 h-96 mx-auto elemento hue-rotate-90"></div>
+
+      <div class="w-4/12 h-96 mx-auto elemento invert"></div>
+
+      <div class="w-4/12 h-96 mx-auto elemento saturate-200"></div>
+
+      <div class="w-4/12 h-96 mx-auto elemento sepia"></div>
+
+      <hr class="my-20" />
+
+      <!-- Backdrop -->
+      <h1 class="text-center text-4xl mb-2">Backdrop</h1>
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-blur">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-brightness-200">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-contrast-200">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-grayscale">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-hue-rotate-90">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-invert">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-saturate-200">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+
+      <div class="w-4/12 h-96 mx-auto elemento">
+        <div class="w-full h-full backdrop-sepia">
+          <p class="bg-white p-5 rounded">Hola Tailwind</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

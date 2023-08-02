@@ -1,0 +1,9 @@
+@import url("../../public/buttons/botones.css");
+@import url("../../public/dropdown/dropdown.css");
+@import url("../../public/card/cards.css");
+@import url("../../public/galeria/galeria.css");
+@import url("../../public/hero/hero.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

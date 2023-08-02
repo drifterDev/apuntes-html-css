@@ -1,0 +1,47 @@
+/* 
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio. 
+*/
+
+// Para importar modulos
+@use "style2";
+@use "mixins";
+@use "herencia";
+@use "operadores";
+@use "condicionales";
+@use "bucles";
+
+// Variables
+$fuente-principal: sans-serif, Helvetica, Arial;
+$fondo-color: black;
+$color-p: white;
+$papaya: papayawhip;
+
+// Anidacion
+h1 {
+  font-family: $fuente-principal;
+  color: $papaya;
+}
+
+p {
+  color: $fondo-color;
+}
+
+.caja {
+  h1 {
+    color: papayawhip;
+  }
+
+  p {
+    color: black;
+  }
+
+  #fecha {
+    p {
+      color: $papaya;
+    }
+  }
+}
