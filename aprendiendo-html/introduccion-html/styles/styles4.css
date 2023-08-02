@@ -1,9 +1,0 @@
-label[for="visitante"] {
-  color: red;
-  font-size: large;
-  font-weight: bold;
-}
-
-input[type="text"] {
-  background-color: yellowgreen;
-}
