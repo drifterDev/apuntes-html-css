@@ -126,7 +126,7 @@ nav .profile-link a {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-image: url("../assets/img/Cover.png");
+  background-image: url("../img/Cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
