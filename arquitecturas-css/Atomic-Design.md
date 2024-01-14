@@ -1,0 +1,13 @@
+# Atomic Design
+
+Separar los componentes por carpetas de la siguiente manera:
+
+* Atomos: label, input, button...
+
+* Moleculas: form, card, menu, list ...
+
+* Organismos: navbar, footer, sidebar...
+
+* Templates: Junta varios organismos (partes de una página)
+
+* Páginas: home, about, contact...
