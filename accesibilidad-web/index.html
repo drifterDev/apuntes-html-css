@@ -75,48 +75,48 @@
           ></button>
           <div class="window">
             <ul class="project-container">
-              <li>
-                <button>
+              <li class="project1-container">
+                <button class="project project1">
                   <img
                     src="./images/project1.png"
                     alt="Mi primer proyecto"
-                    class="project project1"
+                    class="project-img"
                   />
                 </button>
               </li>
-              <li>
-                <button>
+              <li class="project2-container">
+                <button class="project project2">
                   <img
                     src="./images/project2.png"
                     alt="Mi segundo proyecto"
-                    class="project project2"
+                    class="project-img"
                   />
                 </button>
               </li>
-              <li>
-                <button>
+              <li class="project3-container">
+                <button class="project project3">
                   <img
                     src="./images/project3.png"
                     alt="Mi tercer proyecto"
-                    class="project project3"
+                    class="project-img"
                   />
                 </button>
               </li>
-              <li aria-hidden="true">
-                <button>
+              <li class="project4-container" aria-hidden="true">
+                <button class="project project4" tabindex="-1">
                   <img
                     src="./images/project4.png"
                     alt="Mi cuarto proyecto"
-                    class="project project4"
+                    class="project-img"
                   />
                 </button>
               </li>
-              <li aria-hidden="true">
-                <button>
+              <li class="project5-container" aria-hidden="true">
+                <button class="project project5" tabindex="-1">
                   <img
                     src="./images/project5.png"
                     alt="Mi quinto proyecto"
-                    class="project project5"
+                    class="project-img"
                   />
                 </button>
               </li>
@@ -132,24 +132,37 @@
 
     <footer id="contacto" class="contact-section">
       <h2 class="header">Contacto</h2>
+      <p class="intro">
+        Puedes usar el formulario que sigue para mandarme un mensaje
+      </p>
       <form class="form-container">
         <label for="nombre"> Nombre </label>
         <input type="text" name="nombre" id="nombre" />
+        <span id="nameError" aria-live="assertive"></span>
         <label for="correo"> Correo </label>
-        <input type="text" name="correo" id="correo" />
+        <input type="mail" name="correo" id="correo" />
+        <span id="emailError" aria-live="assertive"></span>
         <div class="message-input">
           <label for="mensaje"> Mensaje </label>
           <input type="text" name="mensaje" id="mensaje" />
+          <span id="messageError" aria-live="assertive"></span>
         </div>
         <button class="send-button">Enviar</button>
       </form>
     </footer>
 
-    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="notification" aria-live="assertive"></div>
     <div class="modal-container">
       <div class="modal">
-        Ejemplo de un proyecto mio
-        <div class="modal-project-image"></div>
+        <h2 class="header" id="modal-header" tabindex="0">
+          Ejemplo de un proyecto mio
+        </h2>
+        <img
+          src="./images/project1.png"
+          alt="un pantallazo de mi proyecto"
+          class="modal-project-image"
+        />
+        <button class="modal-button" aria-label="Close button">Cerrar</button>
       </div>
     </div>
 

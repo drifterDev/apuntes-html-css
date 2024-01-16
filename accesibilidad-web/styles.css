@@ -209,7 +209,7 @@ nav {
   width: 1500px;
 }
 
-.project {
+.project-img {
   border-radius: 5px;
   border: 2px solid #000;
   display: inline-block;
@@ -220,7 +220,7 @@ nav {
   object-fit: cover;
 }
 
-.project:hover {
+.project-img:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -229,6 +229,10 @@ nav {
   height: 75px;
   transition: all 0.2s ease-in-out;
   width: 75px;
+}
+
+.arrow:focus {
+  outline: 3px solid var(--verde);
 }
 
 .arrow:hover {
@@ -284,7 +288,9 @@ button:focus {
   outline: 3px solid var(--verde);
 }
 
-.send-button {
+.send-button,
+.modal-button {
+  cursor: pointer;
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
@@ -299,12 +305,26 @@ button:focus {
   font-size: 16px;
 }
 
+.send-button:focus,
+.modal-button:focus {
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
+}
+
+#nameError,
+#emailError,
+#messageError {
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+  margin-bottom: 5px;
+}
+
 .notification {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
   box-shadow: 8px 16px 32px 0px var(--shadow);
-  color: var(--blanco);
+  color: var(--gris-oscuro);
   display: none;
   font-family: var(--secondary-font);
   height: 50px;
@@ -332,11 +352,16 @@ button:focus {
   border: 2px solid #000;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 600px;
   justify-content: center;
   position: fixed;
-  top: 15%;
+  top: 5%;
   width: 700px;
+  padding: 56px;
+}
+
+#modal-header:focus {
+  outline: 3px solid var(--verde);
 }
 
 .modal-project-image {
