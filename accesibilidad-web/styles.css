@@ -47,11 +47,32 @@ img {
   --verde: #7ac943;
 }
 
-body {
+body,
+header,
+section {
   align-items: center;
   background-color: var(--gris-medio);
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.skip-link {
+  height: 0;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  padding: 8px;
+  background-color: var(--verde);
+  border-radius: 5px;
+  color: var(--gris-oscuro);
+  font-family: var(--secondary-font);
+  height: auto;
+  margin: 16px 0 8px;
+  text-decoration: none;
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
 }
 
 .header {
@@ -68,7 +89,6 @@ body {
 }
 
 .header-img {
-  background: center / contain no-repeat url(./images/perfil.jpg);
   border-radius: 50%;
   border: 1px solid var(--gris-oscuro);
   box-shadow: 8px 16px 32px 0px var(--shadow);
@@ -77,13 +97,22 @@ body {
   width: 300px;
 }
 
+nav {
+  width: 100%;
+}
+
 .navigation {
   color: var(--blanco);
   cursor: pointer;
   display: flex;
   justify-content: space-around;
-  margin: 24px 0;
+  margin: 24px auto;
   width: 50%;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--blanco);
 }
 
 .nav-item {
@@ -96,13 +125,26 @@ body {
   width: 33%;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:hover a {
+  background-color: var(--verde);
+  color: var(--gris-oscuro);
+  cursor: pointer;
+}
+
+.nav-item:focus-within {
   background-color: var(--verde);
 }
 
+.nav-item a:focus {
+  outline: none;
+  color: var(--gris-oscuro);
+}
+
 .intro {
-  margin: 0 196px;
+  margin: 24px 196px 0;
   font-family: var(--secondary-font);
+  color: var(--blanco);
 }
 
 .social-media {
@@ -113,6 +155,28 @@ body {
   width: 20%;
 }
 
+.social-media li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+}
+
+.social-media li a:focus {
+  outline: none;
+}
+
+.social-media li:focus-within {
+  outline: 3px solid var(--verde);
+  padding: 8px;
+}
+
+.social-link-text {
+  padding: 8px;
+}
+
 .carousel {
   align-items: center;
   display: flex;
@@ -121,7 +185,22 @@ body {
 
 .window {
   overflow: hidden;
-  width: 805px;
+  width: 815px;
+  padding: 8px;
+}
+
+.project-container li {
+  display: inline-block;
+}
+
+.project-container button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.project-container button:focus-within {
+  outline: 3px solid var(--verde);
 }
 
 .project-container {
@@ -138,31 +217,12 @@ body {
   margin: 0 8px;
   transition: all 0.2s ease-in-out;
   width: 250px;
+  object-fit: cover;
 }
 
 .project:hover {
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.project1 {
-  background: center / cover no-repeat url(./images/project1.png);
-}
-
-.project2 {
-  background: center / cover no-repeat url(./images/project2.png);
-}
-
-.project3 {
-  background: center / cover no-repeat url(./images/project3.png);
-}
-
-.project4 {
-  background: center / cover no-repeat url(./images/project4.png);
-}
-
-.project5 {
-  background: center / cover no-repeat url(./images/project5.png);
 }
 
 .arrow {
@@ -201,21 +261,34 @@ body {
   width: 30%;
 }
 
+label {
+  color: var(--verde);
+  font-family: var(--secondary-font);
+}
+
 .message-input input {
   height: 150px;
   margin-bottom: 16px;
 }
 
 input {
-  outline: none;
   width: 100%;
+}
+
+input:focus {
+  outline: 3px solid var(--verde);
+  padding: 8px;
+}
+
+button:focus {
+  outline: 3px solid var(--verde);
 }
 
 .send-button {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
-  color: white;
+  color: var(--gris-oscuro);
   font-family: var(--secondary-font);
   display: flex;
   height: 50px;
@@ -223,6 +296,7 @@ input {
   margin-bottom: 48px;
   width: 150px;
   margin-left: auto;
+  font-size: 16px;
 }
 
 .notification {

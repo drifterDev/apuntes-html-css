@@ -12,68 +12,139 @@
   </head>
 
   <body>
-    <div class="header-img"></div>
-    <div class="header">Mateo Álvarez</div>
-    <div class="subtitle">Front End Developer</div>
-    <div class="navigation">
-      <div class="nav-item">Acerca de</div>
-      <div class="nav-item">Mis Proyectos</div>
-      <div class="nav-item">Contacto</div>
-    </div>
+    <a href="#main" title="main" class="skip-link"
+      >Saltar al contenido principal</a
+    >
 
-    <div class="intro">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quis culpa
-      incidunt sit voluptatibus nam minus iste assumenda autem vero neque eaque,
-      id suscipit optio voluptatem et natus repudiandae exercitationem! Lorem
-      ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odit
-      possimus, ipsam error dolores, blanditiis saepe repellendus velit deleniti
-      sunt molestiae tenetur tempora, enim ipsum dolorum. Harum a animi alias.
-      Inventore nisi dolores id adipisci ullam aperiam non aliquam, perferendis
-      eveniet ut exercitationem quisquam, labore excepturi quis esse iste
-      quibusdam. Placeat sunt ad optio at dolor assumenda nesciunt veritatis
-      consequuntur?
-      <div class="social-media">
-        <div>
-          <a href="https://twitter.com/gmzjuliana" target="_blank"
-            ><img src="images/twitter.png"
-          /></a>
-        </div>
-        <div>
-          <a href="https://github.com/gmzjuliana" target="_blank"
-            ><img src="images/github-logo.png"
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank"
-            ><img src="images/linkedin.png"
-          /></a>
-        </div>
-      </div>
-    </div>
+    <header>
+      <img src="./images/perfil.jpg" class="header-img" alt="Mateo Álvarez" />
+      <h1 class="header">Mateo Álvarez</h1>
+      <h2 class="subtitle">Front End Developer</h2>
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item"><a href="#acerca-de"> Acerca de </a></li>
+          <li class="nav-item"><a href="#mis-proyectos"> Mis proyectos </a></li>
+          <li class="nav-item"><a href="#contacto"> Contacto </a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="carousel">
-      <div class="arrow arrow-left"></div>
-      <div class="window">
-        <div class="project-container">
-          <div class="project project1"></div>
-          <div class="project project2"></div>
-          <div class="project project3"></div>
-          <div class="project project4"></div>
-          <div class="project project5"></div>
-        </div>
-      </div>
-      <div class="arrow arrow-right"></div>
-    </div>
+    <main id="main">
+      <section id="acerca-de">
+        <h2 class="header">Acerca de</h2>
+        <p class="intro">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quis
+          culpa incidunt sit voluptatibus nam minus iste assumenda autem vero
+          neque eaque, id suscipit optio voluptatem et natus repudiandae
+          exercitationem! Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Eligendi odit possimus, ipsam error dolores, blanditiis saepe
+          repellendus velit deleniti sunt molestiae tenetur tempora, enim ipsum
+          dolorum. Harum a animi alias. Inventore nisi dolores id adipisci ullam
+          aperiam non aliquam, perferendis eveniet ut exercitationem quisquam,
+          labore excepturi quis esse iste quibusdam. Placeat sunt ad optio at
+          dolor assumenda nesciunt veritatis consequuntur?
+        </p>
+        <ul class="social-media">
+          <li>
+            <a title="Twitter" href="https://twitter.com" target="_blank"
+              ><img src="images/twitter.png" alt="Twitter" />
+              <p class="social-link-text">Twitter</p>
+            </a>
+          </li>
+          <li>
+            <a title="GitHub" href="https://github.com" target="_blank"
+              ><img src="images/github-logo.png" alt="GitHub" />
+              <p class="social-link-text">GitHub</p>
+            </a>
+          </li>
+          <li>
+            <a title="Linkedin" href="https://www.linkedin.com" target="_blank"
+              ><img src="images/linkedin.png" alt="Likedin" />
+              <p class="social-link-text">Linkedin</p>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <div class="contact-section">
-      <div class="header">Contacto</div>
-      <div class="form-container">
-        Nombre<input type="text" /> <br />
-        Correo<input type="text" /> <br />
-        <div class="message-input">Mensaje<input type="text" /> <br /></div>
-        <div class="send-button">Enviar</div>
-      </div>
-    </div>
+      <section id="mis-proyectos">
+        <h2 class="header">Mis proyectos</h2>
+        <div class="carousel">
+          <button
+            class="arrow arrow-left"
+            aria-label="backward button"
+          ></button>
+          <div class="window">
+            <ul class="project-container">
+              <li>
+                <button>
+                  <img
+                    src="./images/project1.png"
+                    alt="Mi primer proyecto"
+                    class="project project1"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="./images/project2.png"
+                    alt="Mi segundo proyecto"
+                    class="project project2"
+                  />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <img
+                    src="./images/project3.png"
+                    alt="Mi tercer proyecto"
+                    class="project project3"
+                  />
+                </button>
+              </li>
+              <li aria-hidden="true">
+                <button>
+                  <img
+                    src="./images/project4.png"
+                    alt="Mi cuarto proyecto"
+                    class="project project4"
+                  />
+                </button>
+              </li>
+              <li aria-hidden="true">
+                <button>
+                  <img
+                    src="./images/project5.png"
+                    alt="Mi quinto proyecto"
+                    class="project project5"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="arrow arrow-right"
+            aria-label="forward button"
+          ></button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="contact-section">
+      <h2 class="header">Contacto</h2>
+      <form class="form-container">
+        <label for="nombre"> Nombre </label>
+        <input type="text" name="nombre" id="nombre" />
+        <label for="correo"> Correo </label>
+        <input type="text" name="correo" id="correo" />
+        <div class="message-input">
+          <label for="mensaje"> Mensaje </label>
+          <input type="text" name="mensaje" id="mensaje" />
+        </div>
+        <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
     <div class="notification">El formulario fue enviado sin errores</div>
     <div class="modal-container">
       <div class="modal">
