@@ -4,10 +4,10 @@ window.onload = () => {
   document
     .querySelector(".send-button")
     .addEventListener("click", showNotification);
-  document.querySelectorAll(".project").forEach(element => {
-    element.addEventListener("click", e => openModal(e));
+  document.querySelectorAll(".project").forEach((element) => {
+    element.addEventListener("click", (e) => openModal(e));
   });
-  document.body.addEventListener("click", e => closeModal(e));
+  document.body.addEventListener("click", (e) => closeModal(e));
 };
 
 /** Esta funcion se llama cuando la persona hace click en la fecha derecha del carousel para navegar a la derecha */
@@ -16,7 +16,8 @@ function clickRight() {
     getComputedStyle(document.querySelector(".project-container")).left,
     10
   );
-  if (currentLeft < -270) { //si el valor de izquierda es menor a -270, para de mover el contenido
+  if (currentLeft < -270) {
+    //si el valor de izquierda es menor a -270, para de mover el contenido
     return;
   }
   let newValue = currentLeft - 270; //270 toma en cuenta el tamaño de la imagen mas sus margines
@@ -29,7 +30,8 @@ function clickLeft() {
     getComputedStyle(document.querySelector(".project-container")).left,
     10
   );
-  if (currentLeft === 0) { //si el valor de izquiera es 0, retornar para no seguir movierno el contenido
+  if (currentLeft === 0) {
+    //si el valor de izquiera es 0, retornar para no seguir movierno el contenido
     return;
   }
   let newValue = currentLeft + 270;
@@ -39,7 +41,7 @@ function clickLeft() {
 /** Esta funcion se llama cuando la persona hace click en el boton de enviar del formulario de contacto */
 function showNotification() {
   document.querySelector(".notification").style.display = "flex";
-  setTimeout(function() {
+  setTimeout(function () {
     document.querySelector(".notification").style.display = "none";
   }, 3000);
 }
