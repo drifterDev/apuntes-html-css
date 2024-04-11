@@ -1,6 +1,6 @@
 # Aprendiendo HTML y CSS
 
-Este repositorio contiene recursos y apuntes de html, css, sass y tailwind, enfocados en el aprendizaje y la práctica de estas tecnologías esenciales en el desarrollo de aplicaciones web.
+Este repositorio contiene códigos y apuntes de html, css, sass y tailwind, enfocados en el aprendizaje y la práctica de estas tecnologías esenciales en el desarrollo de aplicaciones web.
 
 ## Contribuciones
 

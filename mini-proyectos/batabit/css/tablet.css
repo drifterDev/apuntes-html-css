@@ -6,14 +6,17 @@ Este código se proporciona bajo la Licencia MIT.
 Para más información, consulta el archivo LICENSE en la raíz del repositorio.
 */
 
-body {
-  counter-reset: game;
+.product-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 930px;
+  margin: 0 auto;
 }
 
-input:checked {
-  counter-increment: game;
+.plans-container-slider {
+  justify-content: center;
 }
 
-.total-count::after {
-  content: counter(game);
+.main-tables-container {
+  justify-content: center;
 }

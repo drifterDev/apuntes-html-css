@@ -1,0 +1,54 @@
+/*
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+*/
+
+@media (max-width: 900px) {
+  .home-main .home-main-text {
+    width: 100%;
+  }
+  .blogs-main-new {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+
+  .blogs-news-img-container {
+    grid-row: 2;
+  }
+
+  .blogs-news-info-container {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .blogs-posts-container .post-container {
+    max-width: 45%;
+  }
+
+  .profile-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .blogs-posts-container .post-container {
+    max-width: 95%;
+  }
+
+  .profile-projects {
+    grid-template-columns: 1fr;
+  }
+}

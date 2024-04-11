@@ -1,0 +1,339 @@
+/*
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+*/
+
+html {
+  font-size: 62.5%;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ffefe7;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header #logo {
+  margin-left: 45px;
+  font-size: 2.4rem;
+  color: #7c6a0a;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 28px;
+}
+header nav ul li img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#hero {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+}
+#hero #hero-left {
+  width: 75%;
+  height: 100%;
+  margin: 10px 30px 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#hero #hero-left h1,
+#hero #hero-left p {
+  font-size: 5rem;
+  color: #7c6a0a;
+}
+#hero #hero-left p {
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  padding-right: 160px;
+}
+#hero #hero-left button {
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+  border: none;
+  background: RGB(250, 149, 0);
+  color: white;
+  border-radius: 50px;
+  font-size: 1.6rem;
+}
+#hero #hero-right {
+  width: 35%;
+  height: 100%;
+  background-image: url("assets/img/main-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 50px 10px 0;
+  border-radius: 30px;
+}
+
+.grilla,
+.grilla-ferniture,
+#products .grilla-products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 250px);
+  grid-gap: 30px;
+}
+
+.card {
+  width: 150px;
+  height: auto;
+  background: #ffdac6;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.card .hearth-card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card .img-card {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+}
+.card .img-card img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+.card h3 {
+  color: #7c6a0a;
+  font-size: 2rem;
+}
+.card p {
+  color: #7c6a0a;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+h2,
+#mapa h3,
+#mapa p {
+  font-size: 3.2rem;
+  font-weight: normal;
+  color: #7c6a0a;
+  margin: 50px 60px;
+}
+
+#products {
+  width: 100%;
+  height: auto;
+}
+.grilla-ferniture .card-product {
+  background: #babd8d;
+}
+.grilla-ferniture .card-product p {
+  color: white;
+}
+.grilla-ferniture .card-product h3 {
+  color: white;
+}
+
+#nosotros {
+  width: 100%;
+  height: auto;
+}
+#nosotros h2,
+#nosotros #mapa h3,
+#mapa #nosotros h3,
+#nosotros #mapa p,
+#mapa #nosotros p {
+  font-weight: bold;
+}
+#nosotros #nosotros-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#nosotros #nosotros-container .left-img {
+  background-image: url("assets/img/earth.png");
+}
+#nosotros #nosotros-container .right-img {
+  background-image: url("assets/img/ecology.png");
+}
+#nosotros #nosotros-container .imagen {
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 30px;
+}
+#nosotros #nosotros-container #nosotros-left,
+#nosotros #nosotros-container #nosotros-right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+#nosotros #nosotros-container #nosotros-left p,
+#nosotros #nosotros-container #nosotros-right p {
+  text-align: center;
+  width: 200px;
+  color: RGB(232, 100, 36);
+  font-size: 2.4rem;
+}
+#galeria {
+  width: 100%;
+  height: auto;
+}
+#galeria h2,
+#galeria #mapa h3,
+#mapa #galeria h3,
+#galeria #mapa p,
+#mapa #galeria p {
+  font-weight: bold;
+}
+#galeria .grilla-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  padding: 50px;
+  grid-gap: 50px;
+}
+#galeria #imagen1 {
+  transition: all 300ms;
+  border-radius: 10px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("assets/img/gallery-1.jpg");
+}
+#galeria #imagen2 {
+  transition: all 300ms;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  background-image: url("assets/img/gallery-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#galeria #imagen3 {
+  transition: all 300ms;
+  border-radius: 10px;
+  width: 100%;
+  background-image: url("assets/img/gallery-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#galeria #imagen1:hover,
+#galeria #imagen2:hover,
+#galeria #imagen3:hover {
+  margin-left: -10px;
+  width: 110%;
+}
+
+#mapa {
+  width: 100%;
+  height: auto;
+}
+#mapa h2,
+#mapa h3,
+#mapa p {
+  font-weight: bold;
+}
+#mapa #img-mapa {
+  width: 100%;
+  height: 600px;
+  background-image: url("assets/img/map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mapa h3,
+#mapa p {
+  color: RGB(232, 100, 36);
+  font-size: 2.4rem;
+}
+#mapa p {
+  font-weight: normal;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: RGB(250, 149, 0);
+  display: flex;
+}
+footer #lista {
+  width: 300px;
+  padding: 40px 15px;
+}
+footer #lista ul {
+  list-style: none;
+}
+footer #lista ul li {
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+footer #lista ul li:first-child {
+  font-weight: bold;
+}
+footer #logos {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#logo1,
+#logo2,
+#logo3 {
+  cursor: pointer;
+  margin-right: 40px;
+  width: 50px;
+  height: 50px;
+  background-image: url("assets/img/instagram-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo2,
+#logo3 {
+  background-image: url("assets/img/twitter-logo.png");
+}
+
+#logo3 {
+  background-image: url("assets/img/facebook-logo.png");
+}
+
+/*# sourceMappingURL=main.css.map */
