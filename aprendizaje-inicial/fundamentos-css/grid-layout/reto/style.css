@@ -1,0 +1,184 @@
+/*
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: RGB(218, 225, 235);
+}
+
+.container {
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: white;
+  border: 5px solid RGB(11, 36, 53);
+}
+
+#div1 {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 30px;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: RGB(218, 225, 235);
+}
+
+#div2 {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+  height: 30px;
+  top: -70px;
+  padding-top: 30px;
+  background: RGB(0, 51, 65);
+}
+
+#div3 {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 150px;
+  height: 45px;
+  margin: 0 auto;
+  top: -70px;
+  background: RGB(241, 176, 157);
+}
+
+#div4 {
+  padding-top: 10px;
+  position: relative;
+  width: 150px;
+  height: 80px;
+  margin: 0 auto;
+  top: -70px;
+  border-radius: 0 0 70px 70px;
+  background: RGB(0, 51, 65);
+}
+
+#div5,
+#div7 {
+  margin-top: 10px;
+  width: 15px;
+  height: 25px;
+  border-radius: 20px;
+  background: RGB(11, 36, 53);
+}
+
+#div6 {
+  margin-top: 10px;
+  width: 30px;
+  height: 40px;
+  border-radius: 15px 15px 0 0;
+  background: RGB(247, 148, 139);
+}
+
+/* boca */
+#div8 {
+  width: 80px;
+  margin: 0 auto;
+  height: 45px;
+  border-radius: 10px 10px 80px 80px;
+  background: RGB(166, 16, 62);
+  overflow: hidden;
+}
+
+/* dientes y lengua */
+#div9 {
+  width: 50px;
+  height: 13px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+  background: white;
+}
+#div10 {
+  margin-top: 6px;
+  width: 60px;
+  height: 30px;
+  z-index: 1;
+  border-radius: 0 30px 0 0;
+  background: RGB(242, 30, 97);
+}
+
+#div11 {
+  position: relative;
+  top: -195px;
+  left: 45px;
+  width: 20px;
+  height: 200px;
+  background: RGB(218, 225, 235);
+}
+
+#div13,
+#div14 {
+  position: relative;
+  right: 15px;
+  top: 30px;
+  width: 20px;
+  height: 40px;
+  border-radius: 40px 0 0 40px;
+  background-color: RGB(218, 225, 235);
+}
+
+#div12 {
+  position: relative;
+  top: -40px;
+  left: 135px;
+  width: 20px;
+  height: 200px;
+  background: RGB(218, 225, 235);
+}
+
+#div14 {
+  left: 15px;
+  border-radius: 0 40px 40px 0;
+}
+
+#div15 {
+  padding-top: 110px;
+  margin: 0 auto;
+  width: 150px;
+  height: 200px;
+  background: RGB(141, 167, 183);
+}
+
+#div16 {
+  width: 150px;
+  height: 100px;
+  border-radius: 70px 70px 0 0;
+  background: white;
+}
+
+#div17 {
+  margin: 0 auto;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 0 50px 50px;
+  background: RGB(218, 225, 235);
+}
+
+#div18 {
+  margin: 0 auto;
+  width: 45px;
+  height: 45px;
+  border-radius: 0 0 50px 50px;
+  background: RGB(247, 144, 138);
+}

@@ -1,0 +1,33 @@
+/*
+Autor: Mateo Álvarez Murillo
+Fecha de creación: 2023
+
+Este código se proporciona bajo la Licencia MIT.
+Para más información, consulta el archivo LICENSE en la raíz del repositorio.
+*/
+
+.cart {
+  width: 500px;
+  height: 500px;
+  background: papayawhip;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cart img {
+  width: 100%;
+}
+
+.cart p {
+  text-align: center;
+}
+
+.cart p:nth-child(3) {
+  color: teal;
+}
